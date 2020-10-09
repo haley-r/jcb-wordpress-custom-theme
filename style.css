@@ -16,3 +16,387 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
     background-color:green;
 }
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Abel|Cinzel&display=swap');
+
+
+/*border-box reset*/
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*overall site styles*/
+body {
+    background: #efefef;
+    color: #2d2d2c;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+/* text styles */
+/* h2, h3, #footer-nav { 
+    text-transform: lowercase;
+    font-style: italic; 
+    color: #aaaaaa;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.menu-toggle{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: .25em;
+    background: #efefef;
+    z-index: 2;
+    cursor: pointer;
+}
+p {
+    text-transform: lowercase;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+        font-weight: bold;
+        transform: translateX(-.1em);
+}  */
+/* main content block styles */
+  /* .fillpage {
+      min-height: 100vh;
+      position: relative;
+  }
+  .fillpage div {
+      margin: 0 5%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  #reel.fillpage div {
+      width:100%;
+      margin: 0;
+  }
+  iframe {
+      width: 96vw;
+      height: 70vh;
+  }
+/*splash page styles*/
+/*
+.hide {
+    display: none;
+    }
+.splash {
+    background: #efefef;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #aaa;
+    cursor: pointer;
+}
+    .splash a {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+    .splash a:hover {
+        font-weight: normal;
+    }
+    .splash-content {
+        width: 100%;
+        height: 60vw;
+        max-height: 480px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);        
+    }
+    #gif-reel {
+        background: #efefef url("../../images/jcb-reel.gif") no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 60vw;
+        max-width: 720px;
+        max-height: 480px;
+    }
+    .splash h1 {
+        font: normal 11.25vw 'Cinzel', serif;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        color: #efefef;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-65%);
+    }
+    .splash p, .splash ul {
+        font-style: italic;
+        letter-spacing: .3em;
+        text-transform: lowercase;
+        position: fixed;
+        margin: .5em;
+    }
+    .splash p {
+        width: 30%;
+        text-align: left;
+        top: -100px;
+        left: 0;
+    }
+    .splash ul {
+        text-align: right;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        bottom: -100px;
+        right: 0;
+        transform: translateY(-1em);
+    }
+    .splash li {
+        display: block;
+        padding: 0 .5em;
+    } */
+/*nav styles, main and footer!*/
+/* ul {
+    list-style: none;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+.main-nav {
+    position: relative;
+}
+    nav ul.toplevel {
+        overflow: scroll;
+        background: hsla(0, 0%, 94%, .85);
+        position: relative;
+        padding: 3em 0;
+        margin: 0 0 0 0;
+        z-index: -1;
+    }
+    .show-menu ul.toplevel {
+        display: block;
+    }
+    .main-nav ul li {
+        letter-spacing: .5em;
+        text-transform: uppercase;
+        padding: .5em;
+    }
+
+    .main-nav ul li ul {
+        padding: .5em 1em 2em 1em;
+    }
+    .main-nav ul li ul li {
+        letter-spacing: .25em;
+        width: 100%;
+        padding: 1em 0 .2em 0;
+        margin: 0;
+        font: bold italic 5vw 'Cinzel', serif; 
+        line-height: 1em;
+    }
+    span {
+        display: block;
+        font: 2vw 'Abel', sans-serif; 
+    }
+    .lastitem {
+        padding-bottom: 3em;
+    }
+#footer-nav {
+    position: fixed;
+    width: 100;
+    background: #efefef;
+    bottom: 0;
+    padding: .5em 0;
+}
+    #footer-nav ul {
+        padding: 0 auto;
+        margin: 0;
+        width: 100%;
+        }
+    #footer-nav ul li {
+        display: inline-block;
+        width: 22%;
+        padding: 0 auto;
+        } */
+
+
+
+/* ----------------------MEDIA-QUERIES---------------------- */
+/*midrange*/
+/* @media screen and (min-width: 540px){
+  /* main content */
+  /* .fillpage div {
+        margin: 0 20%;
+    }
+  iframe {
+      width: 80vw;
+  } */ 
+  /* nav - lists */
+    /* .main-nav {
+        position: fixed;
+    }
+    nav { 
+        font-style: italic;
+    }
+    .menu-toggle{
+        display: none;
+    }
+    .main-nav {
+        background: #efefef;
+        top:0px;
+        height: 3em;
+        color: #aaa;
+    }
+        nav ul.toplevel {
+            display: block;
+            background: none;
+            position: relative;
+            overflow: visible;
+            padding: 0 0 .5em 0;
+            z-index: 1;
+            height: 3em;
+            width: 500px;
+        }
+        .main-nav ul {
+            display: block;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .main-nav ul li{
+            letter-spacing: 0;
+            text-transform: lowercase;
+            float: left;
+        }
+        .main-nav ul li ul {
+            display: none;
+            position: fixed;
+            left: 50%;
+            width: 80vw;
+            height: 100vh;
+            overflow: auto;
+            margin: none;
+            padding: 6vh 0 8vh 0;
+            background: rgba(239, 239, 239, 0.6);
+        }
+        .category {
+            text-decoration: none;
+            position: absolute;
+        }
+            #short-films-link {
+                z-index: 2;
+                left: 0px;
+            }
+            #music-videos-link {
+                z-index: 2;
+                left: 88px;
+            }
+            #promotional-link {
+                z-index: 2;
+                left: 190px;
+            }
+            #nonfiction-link{
+                z-index: 2;
+                left: 285px;
+            }
+            #other-media-link {
+                z-index: 2;
+                left: 370px;
+            }
+            #about-link {
+                z-index: 2;
+                left: 462px;
+            }
+    nav ul{
+        padding: 0;
+        margin: 0;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+    nav ul li ul li {
+        display: block;
+        width: 100%;
+        padding: 1em 0 .2em 0;
+        margin: 0;
+        font-style: italic;
+        font-family: 'Cinzel', serif; 
+        line-height: 1em;
+    }
+    nav ul li ul li:hover{
+        text-decoration: underline;
+    }
+    span {
+        display: block;
+        font: 1rem 'Abel', sans-serif; 
+    }
+    .dropdown li {
+        font-size: 6vh;
+        color: #333;
+    }
+  /* splash *//*
+    .splash-content {
+        height: 50vw;        
+    }
+    #gif-reel {
+        width: 72%;
+        height: 50vw;
+    }
+    .splash h1 {
+        font: normal 9vw 'Cinzel', serif;
+    }
+    .splash p, .splash ul {
+        width: 100%;
+    }
+    .splash p {
+        text-align: center;
+        top: -50px;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    .splash ul {
+        text-align: center;
+        bottom: -50px;
+        transform: translateY(-1em);
+    }
+    .splash li {
+        display: inline-block;
+        padding: 0 5%;
+    }
+      } */
+/* desktop */
+/* @media screen and (min-width: 768px){ */
+  /* main content */
+    /* iframe {
+            width: 96vw;
+        } */
+  /* nav - uls */
+    /* .main-nav ul li ul li{
+      font-size: 3vw;
+  } */
+  /* splash */
+      /* .splash-content {
+          height: 40vw;       
+      }
+
+      #gif-reel {
+          width: 60%;
+          height: 40vw;
+      }
+
+      .splash h1 {
+          font: normal 7.5vw 'Cinzel', serif;
+      }
+    }
+
+ */
+
