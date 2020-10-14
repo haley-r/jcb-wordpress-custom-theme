@@ -11,8 +11,7 @@ Version: 1.0
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
 
-/* custom styles: */
-
+/*-----CUSTOM-STYLES-----*/
 /*line up fonts*/
 @font-face {
     font-family: Abel;  
@@ -30,13 +29,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
     background: #efefef;
     color: #2d2d2c;
-    font-size: 1em;
     line-height: 1.4;
+    font-size: medium;
     font-family: 'Abel', sans-serif;
     text-align: center;
 }
 /* text styles */
-/* h2, h3, #footer-nav { 
+h2, h3, #footer-nav { 
     text-transform: lowercase;
     font-style: italic; 
     color: #aaaaaa;
@@ -63,9 +62,9 @@ a {
 a:hover {
         font-weight: bold;
         transform: translateX(-.1em);
-}  */
+}  
 /* main content block styles */
-  /* .fillpage {
+  .fillpage {
       min-height: 100vh;
       position: relative;
   }
@@ -84,7 +83,6 @@ a:hover {
       height: 70vh;
   }
 /*splash page styles*/
-/*
 .hide {
     display: none;
     }
@@ -161,9 +159,9 @@ a:hover {
     .splash li {
         display: block;
         padding: 0 .5em;
-    } */
+    } 
 /*nav styles, main and footer!*/
-/* ul {
+ul {
     list-style: none;
     padding: 0;
 }
@@ -226,22 +224,22 @@ nav {
         display: inline-block;
         width: 22%;
         padding: 0 auto;
-        } */
+        } 
 
 
 
 /* ----------------------MEDIA-QUERIES---------------------- */
 /*midrange*/
-/* @media screen and (min-width: 540px){
+@media screen and (min-width: 540px){
   /* main content */
-  /* .fillpage div {
+  .fillpage div {
         margin: 0 20%;
     }
   iframe {
       width: 80vw;
   } */ 
   /* nav - lists */
-    /* .main-nav {
+    .main-nav {
         position: fixed;
     }
     nav { 
@@ -343,7 +341,7 @@ nav {
         font-size: 6vh;
         color: #333;
     }
-  /* splash *//*
+  /* splash */
     .splash-content {
         height: 50vw;        
     }
@@ -372,19 +370,19 @@ nav {
         display: inline-block;
         padding: 0 5%;
     }
-      } */
+      } 
 /* desktop */
-/* @media screen and (min-width: 768px){ */
+@media screen and (min-width: 768px){ 
   /* main content */
-    /* iframe {
+    iframe {
             width: 96vw;
-        } */
+        } 
   /* nav - uls */
-    /* .main-nav ul li ul li{
+    .main-nav ul li ul li{
       font-size: 3vw;
-  } */
+  }
   /* splash */
-      /* .splash-content {
+      .splash-content {
           height: 40vw;       
       }
 
@@ -397,6 +395,3 @@ nav {
           font: normal 7.5vw 'Cinzel', serif;
       }
     }
-
- */
-

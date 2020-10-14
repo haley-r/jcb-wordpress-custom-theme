@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
     <div id="wrapper" class="hfeed">
-        <header id="header">
+        <header id="header" style="display: none;">
             <div id="branding">
                 <div id="site-title">
                 <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?>
