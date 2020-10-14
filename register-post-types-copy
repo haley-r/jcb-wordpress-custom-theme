@@ -1,0 +1,25 @@
+<?php
+
+//the purpose of this file is to set up 'work' post types, that can't be deleted when the theme is changed
+
+function portfolio_post_types(){
+    register_post_type('work', array(
+    'show_in_rest'=>true,
+    'supports'=> array('title', 'editor', 'excerpt'),
+    'rewrite'=>(array('slug'=>'work')),
+    'has_archive'=>false,
+    'public'=> true,
+    'labels' =>array(
+                'name' => 'Work',
+                'add_new_item' => 'Add New Work',
+                'edit_item' => 'Edit Work',
+                'all_items' => 'All Work',
+                'singular_name'=> 'Work'
+                ),
+    'menu_icon' => 'dashicons-media-default'
+    ));
+}
+//this will create new post type
+//wp will call our function, "university_post_types", at the right time (init, whatever that means)
+add_action('init', 'portfolio_post_types');
+?>
