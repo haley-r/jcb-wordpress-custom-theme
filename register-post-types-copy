@@ -5,9 +5,10 @@
 function portfolio_post_types(){
     register_post_type('work', array(
     'show_in_rest'=>true,
-    'supports'=> array('title', 'editor', 'excerpt'),
+    'show_in_nav_menus'=>true,
+    'supports'=> array('title', 'editor', 'thumbnail'),
     'rewrite'=>(array('slug'=>'work')),
-    'has_archive'=>false,
+    'has_archive'=>true,
     'public'=> true,
     'labels' =>array(
                 'name' => 'Work',

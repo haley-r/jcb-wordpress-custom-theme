@@ -26,6 +26,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /*border-box reset*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 /*overall site styles*/
+/*
 .work-item{
     border: 2px solid green;
 }
@@ -38,8 +39,9 @@ body {
     font-family: 'Abel', sans-serif;
     text-align: center;
 }
+*/
 /* text styles */
-h2, h3, #footer-nav { 
+/* h2, h3, #footer-nav { 
     text-transform: lowercase;
     font-style: italic; 
     color: #aaaaaa;
@@ -66,9 +68,9 @@ a {
 a:hover {
         font-weight: bold;
         transform: translateX(-.1em);
-}  
+}   */
 /* main content block styles */
-  .fillpage {
+  /* .fillpage {
       min-height: 100vh;
       position: relative;
   }
@@ -85,9 +87,9 @@ a:hover {
   iframe {
       width: 96vw;
       height: 70vh;
-  }
+  } */
 /*splash page styles*/
-.hide {
+/* .hide {
     display: none;
     }
 .splash {
@@ -163,9 +165,9 @@ a:hover {
     .splash li {
         display: block;
         padding: 0 .5em;
-    } 
+    }  */
 /*nav styles, main and footer!*/
-ul {
+/* ul {
     list-style: none;
     padding: 0;
 }
@@ -228,22 +230,22 @@ nav {
         display: inline-block;
         width: 22%;
         padding: 0 auto;
-        } 
+        }  */
 
 
 
 /* ----------------------MEDIA-QUERIES---------------------- */
 /*midrange*/
-@media screen and (min-width: 540px){
+/* @media screen and (min-width: 540px){ */
   /* main content */
-  .fillpage div {
+  /* .fillpage div {
         margin: 0 20%;
     }
   iframe {
       width: 80vw;
   } */ 
   /* nav - lists */
-    .main-nav {
+   /* .main-nav {
         position: fixed;
     }
     nav { 
@@ -344,9 +346,9 @@ nav {
     .dropdown li {
         font-size: 6vh;
         color: #333;
-    }
+    } */
   /* splash */
-    .splash-content {
+    /* .splash-content {
         height: 50vw;        
     }
     #gif-reel {
@@ -374,23 +376,23 @@ nav {
         display: inline-block;
         padding: 0 5%;
     }
-      } 
+      }  */
 /* desktop */
-@media screen and (min-width: 768px){ 
+/* @media screen and (min-width: 768px){  */
   /* main content */
-    iframe {
+    /* iframe {
             width: 96vw;
-        } 
+        }  */
   /* nav - uls */
-    .main-nav ul li ul li{
+    /* .main-nav ul li ul li{
       font-size: 3vw;
-  }
+  } */
   /* splash */
-      .splash-content {
+      /* .splash-content {
           height: 40vw;       
-      }
+      } */
 
-      #gif-reel {
+      /* #gif-reel {
           width: 60%;
           height: 40vw;
       }
@@ -398,4 +400,4 @@ nav {
       .splash h1 {
           font: normal 7.5vw 'Cinzel', serif;
       }
-    }
+    } */

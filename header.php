@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
     <div id="wrapper" class="hfeed">
-        <header id="header" style="display: none;">
+        <header id="header" >
             <div id="branding">
                 <div id="site-title">
                 <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?>
@@ -16,7 +16,7 @@
                 </div>
                 <div id="site-description"><?php bloginfo( 'description' ); ?></div>
             </div>
-            <nav id="menu" style="display:none">
+            <nav id="menu" >
                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
             </nav>
         </header>

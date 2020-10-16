@@ -6,6 +6,7 @@
                     <h1 class="entry-title"><?php the_title(); ?></h1>
                 </header>
                 <section>
+                    <?php the_content() ?>
                     <?php
                     $worktypes = get_field('work_type');
                     if ($worktypes) : ?>
@@ -17,6 +18,9 @@
                     <?php endif; ?>
 
                     <?php
+                    //custom query below will only yield results on work pages
+                    //but no harm in running it on all of them?
+                    //because it'll just return nothing
                     //use the url to figure out the type of work to query for!
                     $thisPageWorkPosts = new WP_Query(array(
                         'post_type' => 'work',
@@ -38,8 +42,11 @@
                         $completionDate = new DateTime(get_field('completion_date'));
                         $thisPageWorkPosts->the_post(); ?>
                         <div class="work-item">
-                            <h5><?php the_title(); ?></h5>
+                            <h5 id="<?php echo $post->post_name ?>"><?php the_title(); ?></h5>
                             <p><?php the_content(); ?></p>
+                            <p>the permalink: <?php echo get_the_permalink();?> </p>
+                            <p>the slug/make it into id: <?php echo $post->post_name ?></p>
+                            <?php the_post_thumbnail(); ?>
                             <p>completed: <?php echo $completionDate->format('F Y'); ?></p>
                             <p>work type: <?php the_field('work_type'); ?></p>
                             <p>page name: <?php echo $pagename ?></p>
