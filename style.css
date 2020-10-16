@@ -12,7 +12,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
 
 /*-----CUSTOM-STYLES-----*/
-/*line up fonts*/
+/*fonts*/
 @font-face {
     font-family: Abel;  
     src: url(../fonts/Abel/Abel-Regular.ttf);  
@@ -25,15 +25,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 /*border-box reset*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-/*overall site styles*/
-p{
-    line-height: 10em;
-}
-/*
-.work-item{
-    border: 2px solid green;
-}
-
+/*overall site styles, mobile/small-screen styles*/
 body {
     background: #efefef;
     color: #2d2d2c;
@@ -42,16 +34,21 @@ body {
     font-family: 'Abel', sans-serif;
     text-align: center;
 }
-*/
-/* text styles */
-/* h2, h3, #footer-nav { 
-    text-transform: lowercase;
-    font-style: italic; 
-    color: #aaaaaa;
-    padding-bottom: 1rem;
-    margin: 0;
+
+nav{
+    display: none;
 }
 
+/* text styles */
+h2, h3, #footer-nav { 
+    text-transform: lowercase;
+    font-style: italic; 
+    font-size: 1.2em;
+    color: #aaaaaa;
+    padding-bottom: 1rem;
+    margin: 8em 0 0 0;
+}
+/*
 .menu-toggle{
     position: fixed;
     top: 0;
@@ -60,9 +57,6 @@ body {
     background: #efefef;
     z-index: 2;
     cursor: pointer;
-}
-p {
-    text-transform: lowercase;
 }
 a {
     text-decoration: none;
@@ -73,24 +67,17 @@ a:hover {
         transform: translateX(-.1em);
 }   */
 /* main content block styles */
-  /* .fillpage {
-      min-height: 100vh;
-      position: relative;
-  }
-  .fillpage div {
-      margin: 0 5%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-  }
-  #reel.fillpage div {
-      width:100%;
-      margin: 0;
-  }
-  iframe {
-      width: 96vw;
-      height: 70vh;
-  } */
+.main-content{
+    padding-bottom: 36vh;
+}
+.main-content p{
+    padding: .5em 10vw;
+}
+iframe {
+    width: 96vw;
+    height: 55vw;
+    margin: 0;
+}
 /*splash page styles*/
 /* .hide {
     display: none;
