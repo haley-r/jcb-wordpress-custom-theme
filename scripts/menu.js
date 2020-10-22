@@ -1,22 +1,23 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    let mainMenu = document.querySelector(".menu-main-menu")
     let openButton = document.querySelector(".menu-toggle");
 
-    openButton.addEventListener("click", () => openMenu());
-        function openMenu() {
-        console.log('hello from js');
-
-        // openButton.classList.toggle("fa-bars")
-        // openButton.classList.toggle("fa-times")
-        // header.classList.toggle("header-menu-active")
+    openButton.addEventListener("click", () => toggleMenu());
+        function toggleMenu() {
+        document.querySelector("body").classList.toggle("smallscreen-menu-open");
+        if (openButton.innerHTML!="close"){
+            openButton.innerHTML = "close";
+        }else openButton.innerHTML = "content(s)"
     }
+window.addEventListener("resize", function(){
+    if (window.innerWidth>540){
+        openButton.innerHTML = "content(s)";
+        document.querySelector("body").classList.remove("smallscreen-menu-open");
+    }
+    
+})
 
-
-    // later! resize toggling too
-    //scroll to top?
+    //later:
+    //scroll to top of page when closing menu??
 
     
 });
