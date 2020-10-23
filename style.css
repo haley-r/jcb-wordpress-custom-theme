@@ -51,6 +51,7 @@ h2, h3, #footer-nav {
 }
 
 .menu-toggle{
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -175,9 +176,6 @@ nav {
     width:100%;
     z-index: 1;
 }
-.menu-toggle{
-    display: block;
-}
 .main-nav {
     position: relative;
 }
@@ -190,6 +188,9 @@ nav {
         z-index: -1;
     }
     div.menu-main-menu-container > ul {
+        display: none;
+    }
+    .smallscreen-menu-open div.menu-main-menu-container > ul {
         display: block;
     }
     .main-nav ul li {
