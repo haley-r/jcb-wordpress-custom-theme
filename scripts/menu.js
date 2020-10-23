@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     //use the button to designate menu open or not
     openButton.addEventListener("click", () => toggleMenu());
         function toggleMenu() {
-        document.querySelector("body").classList.toggle("smallscreen-menu-open");
-        if(openButton.innerHTML!="close"){
-            openButton.innerHTML = "close";
-        }else{
-            openButton.innerHTML = "content(s)";
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
+            document.querySelector("body").classList.toggle("smallscreen-menu-open");
+            if(openButton.innerHTML!="close"){
+                openButton.innerHTML = "close";
+            }else{
+                openButton.innerHTML = "content(s)";
+            }
         }
-    }
     //use resizing to a larger screen to designate menu not open
     window.addEventListener("resize", function(){
         if (window.innerWidth>540){
