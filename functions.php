@@ -8,7 +8,10 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'html5', array( 'search-form' ) );
 global $content_width;
 if ( ! isset( $content_width ) ) { $content_width = 1920; }
-register_nav_menus( array( 'main-menu' => esc_html__( 'Main Menu', 'blankslate' ) ) );
+register_nav_menus( array( 
+    'main-menu' => esc_html__( 'Main Menu', 'blankslate' ),
+    'contact-link-menu' => esc_html__('Contact/Link Menu', 'blankslate'), 
+    ) );
 }
 //between the comment lines is original code, rest is default with blank slate
 //reguister other menus here?
@@ -17,7 +20,7 @@ add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
 function blankslate_load_scripts() {
 wp_enqueue_style( 'blankslate-style', get_stylesheet_uri() );
 wp_enqueue_script( 'jquery' );
-wp_enqueue_script('js-file', get_template_directory_uri() . '/scripts/menu.js');
+wp_enqueue_script('js-file', get_template_directory_uri() . '/scripts/menus.js');
 }
 add_action( 'wp_footer', 'blankslate_footer_scripts' );
 function blankslate_footer_scripts() {

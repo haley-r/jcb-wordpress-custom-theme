@@ -18,4 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector("body").classList.remove("smallscreen-menu-open");
         }  
     })
+
+    let contactToggle = document.querySelector(".contact-toggle");
+    //show or hide contact information (on small screens)
+    contactToggle.addEventListener("click", () => toggleContact());
+    function toggleContact() {
+        document.querySelector("footer").classList.toggle("footer-contact-open");
+        // if (contactToggle.innerHTML != "contact up") {
+        //     contactToggle.innerHTML = "close contact";
+        // } else {
+        //     contactToggle.innerHTML = "contact up";
+        // }
+    }
+    //use resizing to a larger screen to designate menu not open
+    // window.addEventListener("resize", function () {
+    //     if (window.innerWidth > 540) {
+    //         openButton.innerHTML = "content(s)";
+    //         document.querySelector("body").classList.remove("smallscreen-menu-open");
+    //     }
+    // })
 });
