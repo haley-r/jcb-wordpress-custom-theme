@@ -23,7 +23,7 @@
                 <div id="site-description"><?php bloginfo('description'); ?></div>
             </div>
             <nav id="menu" class="main-nav">
-                <button class="menu-toggle"><a href="#top-item">content(s)</a></button>
+                <button class="menu-toggle">content(s)</button>
                 <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
             </nav>
         </header>
