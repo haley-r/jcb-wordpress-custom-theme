@@ -118,6 +118,16 @@ iframe {
     font-weight: bold;
     letter-spacing: .15em;
 }
+.work-item .custom-view-link{
+    color: var(--jcb-offwhite);
+    background-color: var(--jcb-charcoal);
+    padding: .5em;
+    font-family: 'Abel';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
 /*splash page styles*/
 /* .hide {
     display: none;
@@ -314,6 +324,7 @@ img.attachment-post-thumbnail{
     width: 100vw;
     padding: 0 3vw;
     height: auto;
+    margin-bottom: 1em;
 }
 
 .entry-title{

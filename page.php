@@ -35,16 +35,18 @@
                         $thisPageWorkPosts->the_post(); ?>
                         <div class="work-item">
                             <h5 id="<?php echo $post->post_name ?>"><?php the_title(); ?></h5>
+                            <?php if (get_post_type() == 'work' && get_field('completion_date') != null) {
+                            ?><p class="completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
+                            } ?>
                             <p><?php the_content(); ?></p>
                             <div class="thumbnail-link">
                                 <?php the_post_thumbnail(); ?>
-                                <a href="<?php the_field('link_to_view_work'); ?>" target="_blank">
-                                    <?php the_field('label_for_view_link') ?>
-                                </a>
+                                <?php if (get_field('link_to_view_work') != null) { ?>
+                                    <a href="<?php the_field('link_to_view_work'); ?>" target="_blank" class="custom-view-link">
+                                        <?php the_field('label_for_view_link') ?>
+                                    </a>
+                                <?php } ?>
                             </div>
-                            <?php if (get_post_type() == 'work') {
-                            ?><p class="completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
-                                 } ?>
                         </div>
                     <?php
                     }
