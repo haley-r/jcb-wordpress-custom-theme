@@ -20,16 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     let contactToggle = document.querySelector(".contact-toggle");
+    let contactToggleClose = document.querySelector(".contact-toggle-close");
     //show or hide contact information (on small screens)
     contactToggle.addEventListener("click", () => toggleContact());
+    contactToggleClose.addEventListener("click", () => toggleContact());
     function toggleContact() {
         document.querySelector("footer").classList.toggle("footer-contact-open");
-        // if (contactToggle.innerHTML != "contact up") {
-        //     contactToggle.innerHTML = "close contact";
-        // } else {
-        //     contactToggle.innerHTML = "contact up";
-        // }
     }
+
     //use resizing to a larger screen to designate menu not open
     // window.addEventListener("resize", function () {
     //     if (window.innerWidth > 540) {
