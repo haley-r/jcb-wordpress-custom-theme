@@ -489,7 +489,8 @@ footer{
                 overflow: auto;
                 margin: none;
                 padding: 6vh 0 8vh 0;
-                z-index: 10;
+                z-index: 9;
+                transform: translateY(-.3em);
                 background: rgba(239, 239, 239, 0.6);
                 color: var(--jcb-charcoal);
             }
@@ -566,15 +567,29 @@ footer{
 }
 
 /* Styles for larger screens */
-/* header #branding #site-title{
-        float: left;
-        padding-left: 2vw;
+@media screen and (min-width: 950px){  
+header #branding #site-title{
+        width: 100vw;
+        text-align: left;
+        padding-left: 1em;
+    }
+    header #branding #site-title a{
+        display: block;
+    }
+    header #branding #site-title a:hover{
+        font-size: 1em;
+        font-weight: bold;
+        transform: translateX(0);
     }
     header #branding #site-description{
         display: block;
-        float: right;
-        padding-right: 2vw;
-    } */
+        position: absolute;
+        top: .75em;
+        right: 1em;
+    }
+}
+
+
 
 /* STYLES FOR WIDE SCREENS (short height) */
 
