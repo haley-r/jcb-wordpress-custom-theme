@@ -263,9 +263,20 @@ footer{
         padding-top: 0;
         background-color: var(--jcb-charcoal);
         opacity: .95;
+        overflow: visible;
     }
+        .contact-content p{
+            font-size: 1.6rem;
+            font-family: 'Abel';
+            text-transform: initial;
+            font-style: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            padding: 1em 10vw;
+        }
         #footer-contact li{
-            padding: 10vh 0;
+            font-size: 4vw;
+            padding: 3vh 0;
         }
         .contact-toggle-open{
             opacity: 1;
@@ -428,15 +439,6 @@ footer{
      iframe {
       width: 80vw;
     }
-    header #branding #site-title{
-        float: left;
-        padding-left: 2vw;
-    }
-    header #branding #site-description{
-        display: block;
-        float: right;
-        padding-right: 2vw;
-    }
     header .menu-toggle{
         display: none;
     }
@@ -503,13 +505,80 @@ footer{
     .current-menu-item{
         color: var(--jcb-charcoal);
     }
-
-
-
     /* footer doesn't pop op all the way */
+    #footer-contact{
+        transition: all 1s ease-in-out;
+    }
+    footer.footer-contact-open #footer-contact {
+        height: 24vh;
+        opacity: 1;
+    }
+        .contact-content p{
+            font-size: 1.8vw;
+            padding: .5em 8vw 1em 8vw;
+        }
+        #footer-contact ul{
+            display: flex;
+            margin-top: 1em;
+            flex-direction: row;
+        justify-content:space-around ;
+        align-items: stretch;
+            width: 100vw;
+            padding: 0 15vw;
+        }
+        #footer-contact li{
+            display: inline;
+            font-size: 1.6vw;
+            padding: 0;
+            letter-spacing: normal;
+            /* margin: 0 2em; */
+        }
+        .contact-toggle-open{
+            opacity: 1;
+            transition: all 1s ease-in-out;
+        }
+        footer.footer-contact-open .contact-toggle-open{
+            opacity: 0;
+        }
+        .contact-toggle-close{
+            padding: 1em 1em 1em 2em;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1em;
+            transition: all 1s ease-in-out;
+        }
+        footer.footer-contact-open .contact-toggle-close{
+            color: var(--jcb-offwhite);
+        }
+        footer.footer-contact-open ul{
+            display: block;
+        }
+    #footer-nav { 
+        position: relative;
+        text-transform: lowercase;
+        font-style: italic; 
+        font-size: 1.2em;
+        color: var(--jcb-grey);
+        padding-bottom: 1rem;
+        margin: 26vh 0 0 0;
+    }
 }
 
+/* Styles for larger screens */
+/* header #branding #site-title{
+        float: left;
+        padding-left: 2vw;
+    }
+    header #branding #site-description{
+        display: block;
+        float: right;
+        padding-right: 2vw;
+    } */
+
 /* STYLES FOR WIDE SCREENS (short height) */
+
+
 
 
 

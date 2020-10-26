@@ -6,7 +6,7 @@
                     <h2 class="entry-title"><?php the_title(); ?></h2>
                 </header>
                 <section class="main-content">
-                  <?php the_content(); ?>
+                    <?php the_content(); ?>
                 </section>
             </article>
     <?php endwhile;
