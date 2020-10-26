@@ -72,7 +72,7 @@ ul {
     min-height: 96vh;
 }
     .main-content p{
-        padding: .5em 10vw;
+        padding: .5em 6vw;
     }
 iframe {
     width: 96vw;
@@ -86,7 +86,9 @@ iframe {
     text-transform: uppercase;
     background-color: var(--jcb-offwhite);
     width: 100vw;
-    top: 4.2em;
+    top: 2em;
+    transform: translateY(12vw);
+    padding-bottom: .5em;
 }
     #now-viewing span{
         display: inline;
@@ -105,7 +107,7 @@ header #branding{
     font-family: 'Cinzel', serif;
     font-style: italic;
     font-weight: bold;
-    padding: .25em 0;
+    padding: .75em 0;
     font-size: 4vw;
     letter-spacing: .3em;
 }
@@ -119,7 +121,7 @@ header #branding{
         left: 0;
         width: 100%;
         padding: .25em;
-        margin-top: 7vw;
+        margin-top: 10vw;
         background: #efefef;
         border: none;
         font-family: 'Abel', sans-serif;
@@ -144,6 +146,7 @@ nav {
         div.menu-main-menu-container > ul {
             overflow: scroll;
             background-color: var(--jcb-offwhite);
+            min-height: 100vh;
             /* background: hsla(0, 0%, 94%, .85); */
             position: relative;
             padding: 20vw 0 3em 0;
@@ -243,7 +246,7 @@ footer{
         bottom: 0;
         left: 0;
         width: 100vw;
-        height: 2em;
+        height: 3em;
         z-index: 5;
         color: var(--jcb-offwhite);
         background-color: var(--jcb-charcoal);
@@ -251,7 +254,7 @@ footer{
         font-family: 'Cinzel', serif;
         font-style: italic;
         font-weight: bold;
-        padding: .25em 0;
+        padding: .75em 0;
         font-size: 4vw;
         letter-spacing: .3em;
     }
@@ -263,6 +266,13 @@ footer{
     }
         #footer-contact li{
             padding: 10vh 0;
+        }
+        .contact-toggle-open{
+            opacity: 1;
+            transition: all 1.5s ease-in-out;
+        }
+        footer.footer-contact-open .contact-toggle-open{
+            opacity: 0;
         }
         .contact-toggle-close{
             padding: 8vh 6vh 2vh 2vh;
@@ -397,25 +407,40 @@ footer{
 /* ----------------------MEDIA-QUERIES---------------------- */
 /*midrange*/
 @media screen and (min-width: 540px){
-    body{
+    /* body{
         background-color: lightgreen;
+    } */
+    header #branding, #footer-contact{
+        font-size: 1em;
     }
+    header .menu-toggle{
+        margin-top: 1.8em;
+    }
+    #now-viewing{
+        top: 5.5em;
+        transform: translateY(0);
+    }
+}
+@media screen and (min-width: 768px) and (hover: hover) {
+    body{
+        background-color: red;
+    }
+    .main-content{
+        padding: 30vh 10vw 20vh 10vw;
+    }
+}
 
-  /* main content */
-  /* .fillpage div {
-        margin: 0 20%;
-    }
-  iframe {
+    /*
+    iframe {
       width: 80vw;
-  } */ 
-  /* nav - lists */
-   /*.main-nav {
+  }
+   .main-nav {
          position: fixed;
     }
     nav { 
         font-style: italic;
     }
-    .menu-toggle{
+    header .menu-toggle{
         display: none;
     }
     .main-nav {
@@ -431,16 +456,19 @@ footer{
             overflow: visible;
             padding: 0 0 .5em 0;
             z-index: 1;
-            height: 3em;
-            width: 500px;
+            /* height: 3em; */
+            /* width: 80vw;
+            border: 1px solid red;
         }
         .main-nav ul {
             display: block;
             position: fixed;
+            top: 3em;
             left: 50%;
             transform: translateX(-50%);
         }
-        .main-nav ul li{
+        div.menu-main-menu-container > ul li{
+            font-size: .75em;
             letter-spacing: 0;
             text-transform: lowercase;
             float: left;
@@ -510,7 +538,9 @@ footer{
     .dropdown li {
         font-size: 6vh;
         color: #333;
-    }  */
+    }  
+} 
+*/
   /* splash */
     /* .splash-content {
         height: 50vw;        
@@ -540,9 +570,10 @@ footer{
         display: inline-block;
         padding: 0 5%;
     }*/
-      }  
+      /* } */ 
+
 /* desktop */
-/* @media screen and (min-width: 768px){  */
+/* @media screen and (min-width: 768px){  */ */
   /* main content */
     /* iframe {
             width: 96vw;
@@ -550,7 +581,7 @@ footer{
   /* nav - uls */
     /* .main-nav ul li ul li{
       font-size: 3vw;
-  } */
+  }  */
   /* splash */
       /* .splash-content {
           height: 40vw;       
@@ -560,8 +591,10 @@ footer{
           width: 60%;
           height: 40vw;
       }
-
       .splash h1 {
           font: normal 7.5vw 'Cinzel', serif;
       }
     } */
+ /* } */
+
+
