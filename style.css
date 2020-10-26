@@ -422,125 +422,98 @@ footer{
     }
 }
 @media screen and (min-width: 768px) and (hover: hover) {
-    body{
-        background-color: red;
-    }
     .main-content{
         padding: 30vh 10vw 20vh 10vw;
     }
-}
-
-    /*
-    iframe {
+     iframe {
       width: 80vw;
-  }
-   .main-nav {
-         position: fixed;
     }
-    nav { 
-        font-style: italic;
+    header #branding #site-title{
+        float: left;
+        padding-left: 2vw;
+    }
+    header #branding #site-description{
+        display: block;
+        float: right;
+        padding-right: 2vw;
     }
     header .menu-toggle{
         display: none;
     }
     .main-nav {
+        position: fixed;
+    }
+    nav { 
+        font-style: italic;
+    }
+    .main-nav {
         background: #efefef;
-        top:0px;
+        top:2.9em;
         height: 3em;
         color: #aaa;
     }
-        div.menu-main-menu-container > ul {
-            display: block;
-            background: none;
-            position: relative;
-            overflow: visible;
-            padding: 0 0 .5em 0;
-            z-index: 1;
-            /* height: 3em; */
-            /* width: 80vw;
-            border: 1px solid red;
-        }
-        .main-nav ul {
-            display: block;
-            position: fixed;
-            top: 3em;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    div.menu-main-menu-container > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        background: none;
+        position: fixed;
+        top: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: visible;
+        padding: 0 0 .5em 0;
+        z-index: 1;
+        min-height: 0;
+        height: 3em;
+        width: 90vw;
+    }
         div.menu-main-menu-container > ul li{
-            font-size: .75em;
+            font-size: 2.35vw;
             letter-spacing: 0;
             text-transform: lowercase;
             float: left;
         }
-        .main-nav ul li ul {
-            display: none;
-            position: fixed;
-            left: 50%;
-            width: 80vw;
-            height: 100vh;
-            overflow: auto;
-            margin: none;
-            padding: 6vh 0 8vh 0;
-            background: rgba(239, 239, 239, 0.6);
+        div.menu-main-menu-container > ul>li>a:hover{
+            font-size: .95em;
         }
-        .category {
-            text-decoration: none;
-            position: absolute;
-        }
-            #short-films-link {
-                z-index: 2;
-                left: 0px;
+            .main-nav ul li ul {
+                display: none;
+                position: fixed;
+                left: 0;
+                width: 90vw;
+                height: 100vh;
+                overflow: auto;
+                margin: none;
+                padding: 6vh 0 8vh 0;
+                z-index: 10;
+                background: rgba(239, 239, 239, 0.6);
+                color: var(--jcb-charcoal);
             }
-            #music-videos-link {
-                z-index: 2;
-                left: 88px;
+            .main-nav ul li:hover ul{
+                display: block;
+            }    
+             nav ul li ul li:hover{
+                text-decoration: underline;
             }
-            #promotional-link {
-                z-index: 2;
-                left: 190px;
-            }
-            #nonfiction-link{
-                z-index: 2;
-                left: 285px;
-            }
-            #other-media-link {
-                z-index: 2;
-                left: 370px;
-            }
-            #about-link {
-                z-index: 2;
-                left: 462px;
-            }
-    nav ul{
-        padding: 0;
-        margin: 0;
+    #now-viewing{
+        display: none;
     }
-    ul li:hover ul{
-        display: block;
+    .current-menu-item{
+        color: var(--jcb-charcoal);
     }
-    nav ul li ul li {
-        display: block;
-        width: 100%;
-        padding: 1em 0 .2em 0;
-        margin: 0;
-        font-style: italic;
-        font-family: 'Cinzel', serif; 
-        line-height: 1em;
-    }
-    nav ul li ul li:hover{
-        text-decoration: underline;
-    }
-    span {
-        display: block;
-        font: 1rem 'Abel', sans-serif; 
-    }
-    .dropdown li {
-        font-size: 6vh;
-        color: #333;
-    }  
-} 
-*/
+
+
+
+    /* footer doesn't pop op all the way */
+}
+
+/* STYLES FOR WIDE SCREENS (short height) */
+
+
+
+
   /* splash */
     /* .splash-content {
         height: 50vw;        
