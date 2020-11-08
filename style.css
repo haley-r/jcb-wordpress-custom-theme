@@ -31,6 +31,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 /* border-box reset */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* remove default button styles */
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 /* mobile/small-screen/universal styles first, then larger screen media queries */
 /* styles separated by what they're applied to */
 
@@ -61,6 +71,9 @@ a {
 a:hover {
         font-weight: bold;
         transform: translateX(-.1em);
+}
+img{
+    max-width: 100vw;
 } 
 ul {
     list-style: none;
@@ -199,6 +212,13 @@ nav {
         font-size: 1.6em;
         letter-spacing: .1em;
     }
+    .work-item-subtitle{
+        font-family: 'Cinzel';
+        font-style: italic;
+        font-weight: bold;
+        font-size: .8em;
+        letter-spacing: .1em;
+    }
     .completed-date{
         color: var(--jcb-grey);
         padding: 0;
@@ -273,6 +293,9 @@ footer{
             font-weight: normal;
             letter-spacing: normal;
             padding: 1em 10vw;
+        }
+        footer a{
+            cursor: pointer;
         }
         #footer-contact li{
             font-size: 4vw;
@@ -434,7 +457,7 @@ footer{
 }
 @media screen and (min-width: 768px) and (hover: hover) {
     .main-content{
-        padding: 30vh 10vw 20vh 10vw;
+        padding: 30vh 5vw 20vh 5vw;
     }
      iframe {
       width: 80vw;
@@ -516,7 +539,7 @@ footer{
     }
         .contact-content p{
             font-size: 1.8vw;
-            padding: .5em 8vw 1em 8vw;
+            padding: .75em 8vw 1em 8vw;
         }
         #footer-contact ul{
             display: flex;
@@ -532,7 +555,6 @@ footer{
             font-size: 1.6vw;
             padding: 0;
             letter-spacing: normal;
-            /* margin: 0 2em; */
         }
         .contact-toggle-open{
             opacity: 1;
@@ -564,6 +586,59 @@ footer{
         padding-bottom: 1rem;
         margin: 26vh 0 0 0;
     }
+    .work-item{
+        min-height: 30vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        .work-item:nth-child(even){
+            padding-left: 40vw;
+        }
+        .work-item:nth-child(odd){
+            padding-right: 40vw;
+        }
+    .thumbnail-link{
+        width: 40vw;
+        height: 22vw;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        padding: 0;
+    }
+        .work-item:nth-child(odd) .thumbnail-link{
+            right: 0;
+        }
+        .work-item:nth-child(even) .thumbnail-link{
+            left: 0;
+        }
+    .work-item .custom-view-link{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 20% 0;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        font-size: 3vw;
+        display: none;
+    }
+        .work-item:hover .custom-view-link{
+        transform: translateX(0);
+        display: block;
+        }
+    .work-item p{
+        padding: .5em 3vw;
+    }
+    img.attachment-post-thumbnail{
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        margin: 0;
+        object-fit: cover;
+    }
 }
 
 /* Styles for larger screens */
@@ -575,6 +650,7 @@ header #branding #site-title{
     }
     header #branding #site-title a{
         display: block;
+        z-index: 3;
     }
     header #branding #site-title a:hover{
         font-size: 1em;
@@ -584,6 +660,7 @@ header #branding #site-title{
     header #branding #site-description{
         display: block;
         position: absolute;
+        z-index: 2;
         top: .75em;
         right: 1em;
     }

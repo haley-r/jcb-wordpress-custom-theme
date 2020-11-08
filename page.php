@@ -5,7 +5,7 @@
                 <header class="page-header">
                     <h2 class="entry-title"><?php the_title(); ?></h2>
                 </header>
-                <?php if ($post->post_name != 'artist-statement' && $post->post_name != 'contact-links'){?> 
+                <?php if ($post->post_name != 'artist-statement' && $post->post_name != 'contact-links') { ?>
                     <p id="now-viewing">Now Viewing: <span class="page-title-span"><?php the_title(); ?></span></p>
                 <?php } ?>
                 <section class="main-content">
@@ -37,9 +37,10 @@
                         $thisPageWorkPosts->the_post(); ?>
                         <div class="work-item">
                             <h5 class="work-item-header" id="<?php echo $post->post_name ?>"><?php the_title(); ?></h5>
+                            <h6 class="work-item-subtitle"><?php the_field('subtitle') ?></h6>
                             <?php if (get_post_type() == 'work' && get_field('completion_date') != null) {
                             ?><p class="completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
-                            } ?>
+                                                                                                                } ?>
                             <p><?php the_content(); ?></p>
                             <div class="thumbnail-link">
                                 <?php the_post_thumbnail(); ?>

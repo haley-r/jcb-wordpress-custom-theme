@@ -13,8 +13,8 @@
         //run the above query and get the content of the contact/links page on the DOM
         while ($contactPageContent->have_posts()) {
             $contactPageContent->the_post(); ?>
-            <h5 class="contact-toggle contact-toggle-open"><?php the_title(); ?></h5>
-            <p class="contact-toggle contact-toggle-close">&Chi;</p>
+            <h5 class="contact-toggle contact-toggle-open"><button><?php the_title(); ?></button></h5>
+            <button class="contact-toggle contact-toggle-close">&Chi;</button>
             <div class="contact-content"><?php the_content(); ?></div>
             <?php //wp_nav_menu(array('theme_location' => 'contact-link-menu')); 
             ?>
