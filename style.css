@@ -25,9 +25,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 /* colors */
 :root {
-    --jcb-offwhite: #efefef;
+    --jcb-offwhite: #f3f2f2;
+    --jcb-offwhite-transparency: rgba(243, 242, 242, .6);
     --jcb-grey: #aaa;
-    --jcb-charcoal: #2d2d2c;
+    --jcb-charcoal: #262625;
 }
 /* border-box reset */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -135,7 +136,7 @@ header #branding{
         width: 100%;
         padding: .25em;
         margin-top: 10vw;
-        background: #efefef;
+        background: var(--jcb-offwhite);
         border: none;
         font-family: 'Abel', sans-serif;
         font-size: 1.6em;
@@ -472,7 +473,7 @@ footer{
         font-style: italic;
     }
     .main-nav {
-        background: #efefef;
+        background: var(--jcb-offwhite);
         top:2.9em;
         height: 3em;
         color: #aaa;
@@ -514,7 +515,7 @@ footer{
                 padding: 6vh 0 8vh 0;
                 z-index: 9;
                 transform: translateY(-.3em);
-                background: rgba(239, 239, 239, 0.6);
+                background: var(--jcb-offwhite-transparency);
                 color: var(--jcb-charcoal);
             }
             .main-nav ul li:hover ul{
