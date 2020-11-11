@@ -32,10 +32,11 @@
                         )
                     ));
                     //this gets the posts that fit the above query's criteria (IF ANY) and puts em on the page
+
                     while ($thisPageWorkPosts->have_posts()) {
-                        $completionDate = new DateTime(get_field('completion_date'));
                         $thisPageWorkPosts->the_post(); ?>
                         <div class="work-item">
+                            <?php $completionDate = new DateTime(get_field('completion_date')); ?>
                             <h5 class="work-item-header" id="<?php echo $post->post_name ?>"><?php the_title(); ?></h5>
                             <h6 class="work-item-subtitle"><?php the_field('subtitle') ?></h6>
                             <?php if (get_post_type() == 'work' && get_field('completion_date') != null) {
