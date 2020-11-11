@@ -23,6 +23,20 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     src: url(../fonts/Cinzel/Cinzel-VariableFont_wght.ttf);  
     font-weight: normal;  
 }
+@font-face{
+    font-family: EB_Garamond;
+    src: url(../fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: EB_Garamond_Italic;
+    src: url(../fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+@font-face{
+    font-family: Tajawal;
+    src: url(../fonts/Tajawal/Tajawal-ExtraLight.ttf);
+}
 /* colors */
 :root {
     --jcb-offwhite: #f3f2f2;
@@ -54,7 +68,7 @@ body {
     color: var(--jcb-charcoal);
     line-height: 1.4;
     font-size: medium;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     text-align: center;
 }
 h2, h3 { 
@@ -118,9 +132,10 @@ header #branding{
     color: var(--jcb-offwhite);
     background-color: var(--jcb-charcoal);
     text-transform: uppercase;
-    font-family: 'Cinzel', serif;
-    font-style: italic;
-    font-weight: bold;
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'EB_Garamond', serif;
+    /* font-style: italic; */
+    font-weight: 400;
     padding: .75em 0;
     font-size: 4vw;
     letter-spacing: .3em;
@@ -138,7 +153,7 @@ header #branding{
         margin-top: 10vw;
         background: var(--jcb-offwhite);
         border: none;
-        font-family: 'Abel', sans-serif;
+        font-family: 'Tajawal', sans-serif;
         font-size: 1.6em;
         font-style: italic;
         color: #aaa;
@@ -194,7 +209,7 @@ nav {
         }
     .main-nav span {
         display: block;
-        font: 2vw 'Abel', sans-serif; 
+        font: 2vw 'Tajawal', sans-serif; 
     }
     .lastitem {
         padding-bottom: 3em;
@@ -233,7 +248,7 @@ nav {
         margin: 0 20vw;
         width: auto;
         display: block;
-        font-family: 'Abel';
+        font-family: 'Tajawal';
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -288,7 +303,7 @@ footer{
     }
         .contact-content p{
             font-size: 1.6rem;
-            font-family: 'Abel';
+            font-family: 'Tajawal';
             text-transform: initial;
             font-style: normal;
             font-weight: normal;
@@ -313,7 +328,7 @@ footer{
             padding: 8vh 6vh 2vh 2vh;
             font-size: 2em;
             text-align: right;
-            font-family: 'Abel', sans-serif;
+            font-family: 'Tajawal', sans-serif;
             font-style: normal;
             font-weight: lighter;
             color: var(--jcb-charcoal);
@@ -476,7 +491,7 @@ footer{
         background: var(--jcb-offwhite);
         top:2.9em;
         height: 3em;
-        color: #aaa;
+        color: var(--jcb-grey);
     }
     div.menu-main-menu-container > ul {
         display: flex;
