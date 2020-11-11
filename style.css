@@ -13,29 +13,53 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /*-----CUSTOM-STYLES-----*/
 /* fonts */
-@font-face {
+/* @font-face {
     font-family: Abel;  
     src: url(../fonts/Abel/Abel-Regular.ttf);  
     font-weight: normal;  
-}
-@font-face {
+} */
+/* @font-face {
     font-family: Cinzel;  
     src: url(../fonts/Cinzel/Cinzel-VariableFont_wght.ttf);  
     font-weight: normal;  
-}
+} */
 @font-face{
     font-family: EB_Garamond;
     src: url(../fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
     font-style: normal;
 }
-@font-face{
+/* @font-face{
     font-family: EB_Garamond_Italic;
     src: url(../fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
     font-style: italic;
+} */
+@font-face{
+    font-family: Tajawal_ExtraLight;
+    src: url(../fonts/Tajawal/Tajawal-ExtraLight.ttf);
 }
 @font-face{
-    font-family: Tajawal;
-    src: url(../fonts/Tajawal/Tajawal-ExtraLight.ttf);
+    font-family: Tajawal_Light;
+    src: url(../fonts/Tajawal/Tajawal-Light.ttf);
+}
+@font-face{
+    font-family: Tajawal_Medium;
+    src: url(../fonts/Tajawal/Tajawal-Medium.ttf);
+}
+@font-face{
+    font-family: Tajawal_Regular;
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
+}
+@font-face{
+    font-family: Tajawal_Bold;
+    src: url(../fonts/Tajawal/Tajawal-Bold.ttf);
+}
+@font-face{
+    font-family: Tajawal_ExtraBold;
+    src: url(../fonts/Tajawal/Tajawal-ExtraBold.ttf);
+}
+@font-face{
+    font-family: Tajawal_Black;
+    src: url(../fonts/Tajawal/Tajawal-Black.ttf);
 }
 /* colors */
 :root {
@@ -68,11 +92,12 @@ body {
     color: var(--jcb-charcoal);
     line-height: 1.4;
     font-size: medium;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Tajawal_ExtraLight', sans-serif;
     text-align: center;
 }
 h2, h3 { 
     text-transform: lowercase;
+    font-weight: bolder;
     font-style: italic; 
     font-size: 1.2em;
     color: var(--jcb-grey);
@@ -201,7 +226,7 @@ nav {
                         width: 100%;
                         padding: 1em 0 .2em 0;
                         margin: 0;
-                        font: bold italic 5vw 'Cinzel', serif; 
+                        font: bold italic 5vw 'EB_Garamond', serif; 
                         line-height: 1em;
                     }
         .smallscreen-menu-open #content {
@@ -222,14 +247,14 @@ nav {
     margin-bottom: 4vh;
 }
     .work-item-header{
-        font-family: 'Cinzel';
+        font-family: 'EB_Garamond';
         font-style: italic;
         font-weight: bold;
         font-size: 1.6em;
         letter-spacing: .1em;
     }
     .work-item-subtitle{
-        font-family: 'Cinzel';
+        font-family: 'EB_Garamond';
         font-style: italic;
         font-weight: bold;
         font-size: .8em;
@@ -287,7 +312,7 @@ footer{
         color: var(--jcb-offwhite);
         background-color: var(--jcb-charcoal);
         text-transform: uppercase;
-        font-family: 'Cinzel', serif;
+        font-family: 'EB_Garamond', serif;
         font-style: italic;
         font-weight: bold;
         padding: .75em 0;
