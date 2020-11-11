@@ -34,31 +34,31 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-style: italic;
 } */
 @font-face{
-    font-family: Tajawal_ExtraLight;
+    font-family: Tajawal-ExtraLight;
     src: url(../fonts/Tajawal/Tajawal-ExtraLight.ttf);
 }
 @font-face{
-    font-family: Tajawal_Light;
+    font-family: Tajawal-Light;
     src: url(../fonts/Tajawal/Tajawal-Light.ttf);
 }
 @font-face{
-    font-family: Tajawal_Medium;
+    font-family: Tajawal-Medium;
     src: url(../fonts/Tajawal/Tajawal-Medium.ttf);
 }
 @font-face{
-    font-family: Tajawal_Regular;
+    font-family: Tajawal-Regular;
     src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
 }
 @font-face{
-    font-family: Tajawal_Bold;
+    font-family: Tajawal-Bold;
     src: url(../fonts/Tajawal/Tajawal-Bold.ttf);
 }
 @font-face{
-    font-family: Tajawal_ExtraBold;
+    font-family: Tajawal-ExtraBold;
     src: url(../fonts/Tajawal/Tajawal-ExtraBold.ttf);
 }
 @font-face{
-    font-family: Tajawal_Black;
+    font-family: Tajawal-Black;
     src: url(../fonts/Tajawal/Tajawal-Black.ttf);
 }
 /* colors */
@@ -92,15 +92,15 @@ body {
     color: var(--jcb-charcoal);
     line-height: 1.4;
     font-size: medium;
-    font-family: 'Tajawal_ExtraLight', sans-serif;
+    font-family: 'Tajawal-ExtraLight', sans-serif;
     text-align: center;
 }
-h2, h3 { 
-    text-transform: lowercase;
-    font-weight: bolder;
-    font-style: italic; 
-    font-size: 1.2em;
-    color: var(--jcb-grey);
+h2, h3{ 
+    font-family: 'EB_Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 1em;
+    color: var(--jcb-charcoal);
     padding-bottom: 1rem;
     margin: 26vh 0 0 0;
 }
@@ -127,26 +127,14 @@ ul {
     .main-content p{
         padding: .5em 6vw;
     }
+    .main-content p a{
+        font-family: 'Tajawal-Light';
+    }
 iframe {
     width: 96vw;
     height: 55vw;
     margin: 0;
 }
-#now-viewing{
-    position: fixed;
-    color: var(--jcb-grey);
-    z-index: 5;
-    text-transform: uppercase;
-    background-color: var(--jcb-offwhite);
-    width: 100vw;
-    top: 2em;
-    transform: translateY(12vw);
-    padding-bottom: .5em;
-}
-    #now-viewing span{
-        display: inline;
-        font: inherit;
-    }
 /* header styles (includes nav) */
 header #branding{
     position: fixed;
@@ -157,15 +145,16 @@ header #branding{
     color: var(--jcb-offwhite);
     background-color: var(--jcb-charcoal);
     text-transform: uppercase;
-    /* font-family: 'Cinzel', serif; */
     font-family: 'EB_Garamond', serif;
-    /* font-style: italic; */
-    font-weight: 400;
     padding: .75em 0;
     font-size: 4vw;
     letter-spacing: .3em;
 }
     header #branding #site-description{
+        position: absolute;
+        z-index: 2;
+        top: .75em;
+        right: 1em;
         display: none;
     }
     header .menu-toggle{
@@ -174,14 +163,18 @@ header #branding{
         top: 0;
         left: 0;
         width: 100%;
-        padding: .25em;
+        padding-bottom: .5em;
         margin-top: 10vw;
-        background: var(--jcb-offwhite);
-        border: none;
-        font-family: 'Tajawal', sans-serif;
-        font-size: 1.6em;
-        font-style: italic;
-        color: #aaa;
+        background: var(--jcb-charcoal);
+        border: .1px solid green;
+        /* border: none; */
+        font-family: 'EB_Garamond', serif;
+        /* text-transform: uppercase; */
+        font-weight: 400;
+        font-size: 1.2em;
+        letter-spacing: .2em;
+        /* font-style: italic; */
+        color: var(--jcb-grey);
         z-index: 2;
         cursor: pointer;
     }
@@ -239,6 +232,21 @@ nav {
     .lastitem {
         padding-bottom: 3em;
     }
+    #now-viewing{
+    position: fixed;
+    color: var(--jcb-grey);
+    z-index: 5;
+    text-transform: uppercase;
+    background-color: var(--jcb-offwhite);
+    width: 100vw;
+    top: 2em;
+    transform: translateY(12vw);
+    padding-bottom: .5em;
+}
+    #now-viewing span{
+        display: inline;
+        font: inherit;
+    }
 /* work post styles */
 .work-item{
     margin-bottom: 20vh;
@@ -292,7 +300,7 @@ footer{
 }
     #copyright {
         position: absolute;
-        bottom: 8vw;
+        bottom: 3.5em;
         right: 0;
         text-align: right;
         padding-right: .5em;
@@ -313,8 +321,9 @@ footer{
         background-color: var(--jcb-charcoal);
         text-transform: uppercase;
         font-family: 'EB_Garamond', serif;
-        font-style: italic;
-        font-weight: bold;
+        text-transform: uppercase;
+        /* font-style: italic; */
+        /* font-weight: bold; */
         padding: .75em 0;
         font-size: 4vw;
         letter-spacing: .3em;
@@ -327,14 +336,17 @@ footer{
         overflow: visible;
     }
         .contact-content p{
-            font-size: 1.6rem;
-            font-family: 'Tajawal';
+            font-size: 1.2rem;
+            font-family: 'Tajawal-ExtraLight', sans-serif;
             text-transform: initial;
             font-style: normal;
             font-weight: normal;
             letter-spacing: normal;
             padding: 1em 10vw;
         }
+            .contact-content > :first-child{
+                padding-top: 4em;
+            }
         footer a{
             cursor: pointer;
         }
@@ -346,12 +358,19 @@ footer{
             opacity: 1;
             transition: all 1.5s ease-in-out;
         }
+            .contact-toggle-open button{
+                text-transform: uppercase;
+                letter-spacing: .3em;
+            }
         footer.footer-contact-open .contact-toggle-open{
             opacity: 0;
         }
         .contact-toggle-close{
-            padding: 8vh 6vh 2vh 2vh;
-            font-size: 2em;
+            padding: 8vh 2vh 6vh 6vh;
+            font-size: 1.6em;
+            position: absolute;
+            right: 0;
+            top: 0;
             text-align: right;
             font-family: 'Tajawal', sans-serif;
             font-style: normal;
@@ -700,10 +719,6 @@ header #branding #site-title{
     }
     header #branding #site-description{
         display: block;
-        position: absolute;
-        z-index: 2;
-        top: .75em;
-        right: 1em;
     }
 }
 /* even larger screens */
