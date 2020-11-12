@@ -16,6 +16,8 @@
             <h5 class="contact-toggle contact-toggle-open"><button><?php the_title(); ?></button></h5>
             <button class="contact-toggle contact-toggle-close">&Chi;</button>
             <div class="contact-content"><?php the_content(); ?></div>
+            <!-- the code below can be used if it seems like a menu is more the way to go than
+            kind of twisting the definition/use case for a page -->
             <?php //wp_nav_menu(array('theme_location' => 'contact-link-menu')); 
             ?>
         <?php

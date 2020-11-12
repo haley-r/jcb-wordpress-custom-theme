@@ -96,7 +96,7 @@ body {
     text-align: center;
 }
 h2, h3{ 
-    font-family: 'EB_Garamond', serif;
+    font-family: 'Tajawal-Light', sans-serif;
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: 1em;
@@ -169,7 +169,7 @@ header #branding{
         background: var(--jcb-charcoal);
         /* border: .1px solid green; */
         /* border: none; */
-        font-family: 'EB_Garamond', serif;
+        font-family: 'Tajawal-ExtraLight', sans-serif;
         /* text-transform: uppercase; */
         font-weight: 400;
         font-size: 1.2em;
@@ -183,11 +183,11 @@ header #branding{
     .smallscreen-menu-open header .menu-toggle{
         /* padding-top: .5em; */
         /* padding-bottom: .5em; */
-        color: var(--jcb-charcoal);
-        background-color: var(--jcb-offwhite);
-        transition: color .5s linear;
-        transition: background-color .5s linear;
-        text-decoration: underline;
+        /* color: var(--jcb-charcoal); */
+        /* background-color: var(--jcb-offwhite); */
+        /* transition: color .5s linear; */
+        /* transition: background-color .5s linear; */
+        /* text-decoration: underline; */
     }
 nav {
     position: fixed;
@@ -215,14 +215,16 @@ nav {
             visibility: hidden;
             opacity: 0;
             transition: visibility 0.5s, opacity .5s linear;
-            background-color: var(--jcb-charcoal);
+            background-color: var(--jcb-offwhite);
+            color: var(--jcb-offwhite);
         }
         .smallscreen-menu-open div.menu-main-menu-container > ul {
             /* display: block; */
-            background-color: var(--jcb-offwhite);
+            background-color: var(--jcb-charcoal);
+            color: var(--jcb-offwhite);
             visibility: visible;
             opacity: 1;
-            transition: visibility 0.5s, opacity .5s linear;
+            transition: visibility 0.5s, opacity .75s linear;
         }
             .main-nav ul li {
                 letter-spacing: .25em;

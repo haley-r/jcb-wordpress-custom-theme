@@ -9,7 +9,11 @@
                     <p id="now-viewing">Now Viewing: <span class="page-title-span"><?php the_title(); ?></span></p>
                 <?php } ?>
                 <section class="main-content">
-                    <?php the_content() ?>
+                    <?php 
+                        //for work type pages there may or may not be any content associated with that page
+                        //it might be title only, but could have text too.
+                        the_content() 
+                    ?>
                     <?php
                     //custom query below will only yield results on work pages
                     //but no harm in running it on all of them?
