@@ -67,6 +67,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     --jcb-offwhite-transparency: rgba(243, 242, 242, .6);
     --jcb-grey: #aaa;
     --jcb-charcoal: #262625;
+    --jcb-charcoal-transparency: rgba(38,38,37,.5);
 }
 /* border-box reset */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -271,11 +272,13 @@ nav {
     color: var(--jcb-grey);
     z-index: 5;
     text-transform: uppercase;
-    background-color: var(--jcb-offwhite);
+    font-weight: bold;
+    font-size: .9em;
+    background-color: var(--jcb-charcoal);
     width: 100vw;
-    top: 2em;
+    top: 1.5em;
     transform: translateY(12vw);
-    padding-bottom: .5em;
+    padding-bottom: .25em;
 }
     #now-viewing span{
         display: inline;
@@ -289,14 +292,18 @@ nav {
     margin-bottom: 4vh;
 }
     .work-item-header{
-        font-family: 'EB_Garamond';
-        font-style: italic;
+        /* font-family: 'EB_Garamond'; */
+        /* font-style: italic; */
+        text-transform: uppercase;
         font-weight: bold;
         font-size: 1.6em;
         letter-spacing: .1em;
+        padding-bottom: 0;
+        line-height: 1em;
     }
     .work-item-subtitle{
-        font-family: 'EB_Garamond';
+        /* border: .25px solid green; */
+        /* font-family: 'EB_Garamond'; */
         font-style: italic;
         font-weight: bold;
         font-size: .8em;
@@ -305,17 +312,29 @@ nav {
     .completed-date{
         color: var(--jcb-grey);
         padding: 0;
-        line-height: .5em;
+        line-height: 1em;
+        /* border: .25px solid green; */
         margin: 0;
+    }
+    .work-item-content{
+        padding: 0 3vw 2vh 3vw;
+        text-align: left;
     }
     .work-item .custom-view-link{
         color: var(--jcb-offwhite);
-        background-color: var(--jcb-charcoal);
-        padding: .75em;
-        margin: 0 20vw;
-        width: auto;
+        background-color: var(--jcb-charcoal-transparency);
+        text-align: center;
+        /* background-color: var(--jcb-offwhite-transparency); */
+        line-height: 1em;
+        height: 2.5em;
+        padding: 5vw;
+        margin: 0;
+        position: absolute;
+        bottom: .5em;
+        right: 3vw;
         display: block;
-        font-family: 'Tajawal';
+        font-family: 'Tajawal-Regular', sans-serif;
+        letter-spacing: .1em;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -323,7 +342,7 @@ nav {
         width: 100vw;
         padding: 0 3vw;
         height: auto;
-        margin-bottom: 1em;
+        /* margin-bottom: 1em; */
     }
     .entry-title{
         display: none;

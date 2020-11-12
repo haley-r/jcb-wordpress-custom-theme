@@ -9,10 +9,10 @@
                     <p id="now-viewing">Now Viewing: <span class="page-title-span"><?php the_title(); ?></span></p>
                 <?php } ?>
                 <section class="main-content">
-                    <?php 
-                        //for work type pages there may or may not be any content associated with that page
-                        //it might be title only, but could have text too.
-                        the_content() 
+                    <?php
+                    //for work type pages there may or may not be any content associated with that page
+                    //it might be title only, but could have text too.
+                    the_content()
                     ?>
                     <?php
                     //custom query below will only yield results on work pages
@@ -46,7 +46,7 @@
                             <?php if (get_post_type() == 'work' && get_field('completion_date') != null) {
                             ?><p class="completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
                                                                                                                 } ?>
-                            <p><?php the_content(); ?></p>
+                            <div class="work-item-content"><?php the_content(); ?></div>
                             <div class="thumbnail-link">
                                 <?php the_post_thumbnail(); ?>
                                 <?php if (get_field('link_to_view_work') != null) { ?>
