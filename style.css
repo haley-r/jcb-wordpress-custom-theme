@@ -163,10 +163,11 @@ header #branding{
         top: 0;
         left: 0;
         width: 100%;
-        padding-bottom: .5em;
+        padding-top: .25em;
+        padding-bottom: .25em;
         margin-top: 10vw;
         background: var(--jcb-charcoal);
-        border: .1px solid green;
+        /* border: .1px solid green; */
         /* border: none; */
         font-family: 'EB_Garamond', serif;
         /* text-transform: uppercase; */
@@ -175,8 +176,18 @@ header #branding{
         letter-spacing: .2em;
         /* font-style: italic; */
         color: var(--jcb-grey);
-        z-index: 2;
+        z-index: 11;
         cursor: pointer;
+        transition: color .5s ease-out;
+    }
+    .smallscreen-menu-open header .menu-toggle{
+        /* padding-top: .5em; */
+        /* padding-bottom: .5em; */
+        color: var(--jcb-charcoal);
+        background-color: var(--jcb-offwhite);
+        transition: color .5s linear;
+        transition: background-color .5s linear;
+        text-decoration: underline;
     }
 nav {
     position: fixed;
@@ -192,22 +203,32 @@ nav {
     }
         div.menu-main-menu-container > ul {
             overflow: scroll;
-            background-color: var(--jcb-offwhite);
+            /* background-color: var(--jcb-offwhite); */
             min-height: 100vh;
             /* background: hsla(0, 0%, 94%, .85); */
             position: relative;
-            padding: 20vw 0 3em 0;
+            padding: 22vw 0 3em 0;
             margin: 0 0 0 0;
             z-index: -1;
-            display: none;
+            /* display: none; */
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0.5s, opacity .5s linear;
+            background-color: var(--jcb-charcoal);
         }
         .smallscreen-menu-open div.menu-main-menu-container > ul {
-            display: block;
+            /* display: block; */
+            background-color: var(--jcb-offwhite);
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0.5s, opacity .5s linear;
         }
             .main-nav ul li {
                 letter-spacing: .25em;
                 text-transform: uppercase;
-                font-size: 1.6em;
+                /* font-size: 1.6em; */
+                font-size: 4.2vh;
                 padding: .8em;
             }
                 .main-nav ul li ul {
@@ -222,6 +243,17 @@ nav {
                         font: bold italic 5vw 'EB_Garamond', serif; 
                         line-height: 1em;
                     }
+        /* #content article {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s, opacity 0.75s linear;
+            height: auto;
+        }
+        .smallscreen-menu-open #content article {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.75s linear;
+        } */
         .smallscreen-menu-open #content {
             display: none;
         }

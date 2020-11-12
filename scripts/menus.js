@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         function toggleMenu() {
             window.scrollTo(0, 0);
             document.querySelector("body").classList.toggle("smallscreen-menu-open");
-            if(openButton.innerHTML!="close"){
-                openButton.innerHTML = "close";
+            if(openButton.innerHTML!="close menu"){
+                openButton.innerHTML = "close menu";
             }else{
                 openButton.innerHTML = "content(s)";
             }
