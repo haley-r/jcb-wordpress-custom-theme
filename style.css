@@ -347,6 +347,46 @@ nav {
     .entry-title{
         display: none;
     }
+
+/* work page styles */
+.work-page-title{
+    /* color:magenta; */
+    font-size: 1.2em;
+    /* border: 2px solid darkgoldenrod; */
+    padding: 0 6vw;
+    margin: 5em 0 0 0;
+}
+.work-page-subtitle{
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--jcb-grey);
+    font-style: italic;
+    margin: 0;
+}
+.work-page-main-content{
+    padding: 0 0 25vh 0;
+}
+.work-page-main-content p{
+    text-align: left;
+}
+p.work-page-completed-date{
+    text-align: center;
+    color: var(--jcb-grey);
+    font-style: italic;
+}
+.link-block{
+    padding-top: 3em;
+}
+.link-block a{
+    font-family: 'Tajawal-Light', sans-serif;
+    font-size: 1.2em;
+    display: block;
+    text-transform: uppercase;
+    padding: .5em 0;
+}
+    .link-block a.link-to-view-work{
+    color: red;
+}
  /* footer styles  */
 footer{
     position: relative;
