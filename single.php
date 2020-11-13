@@ -4,7 +4,8 @@
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="page-header">
                     <h2 class="work-page-title"><?php the_title(); ?></h2>
-                    <h3 class="work-page-subtitle"><?php the_field('subtitle') ?></h6>
+                    <?php if (get_post_type() == 'work' && the_field('subtitle') != null) {
+                    ?><h3 class="work-page-subtitle"><?php the_field('subtitle') ?></h6><?php } ?>
                 </header>
                 <section class="main-content work-page-main-content">
                     <?php the_post_thumbnail(); ?>
@@ -12,7 +13,7 @@
                     <?php if (get_post_type() == 'work' && get_field('completion_date') != null) {
                         $completionDate = new DateTime(get_field('completion_date'));
                     ?><p class="work-page-completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
-                       } ?>
+                                                                                                                    } ?>
                     <div class="link-block">
                         <?php if (get_field('link_to_view_work') != null) { ?>
                             <a href="<?php the_field('link_to_view_work'); ?>" target="_blank" class="custom-view-link">
