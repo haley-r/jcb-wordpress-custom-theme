@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     contactToggleClose.addEventListener("click", () => toggleContact());
     function toggleContact() {
         document.querySelector("footer").classList.toggle("footer-contact-open");
+        document.querySelector("body").classList.toggle("footer-contact-open");
     }
-    // add 'current-category' class to the selected class
-    
-
 });

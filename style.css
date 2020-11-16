@@ -246,6 +246,9 @@ nav {
         .smallscreen-menu-open #content {
             display: none;
         }
+        body.footer-contact-open{
+            overflow: hidden;
+        }
     .main-nav span {
         display: block;
         font: 2vw 'Tajawal', sans-serif; 
@@ -392,7 +395,8 @@ footer{
     #footer-contact{
         color: var(--jcb-offwhite);
         background-color: var(--jcb-charcoal);
-        transition: all 1.5s ease-in-out;
+        /* transition: all 1.5s ease-in-out; */
+        transition: padding 1.5s ease-in-out, height 1.5s ease-in-out, opacity 1.5s ease-in-out;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -410,7 +414,7 @@ footer{
     }
     footer.footer-contact-open #footer-contact {
         height: 100vh;
-        padding-top: 0;
+        padding: 60px 0 60px 0;
         background-color: var(--jcb-charcoal);
         opacity: .95;
         overflow: scroll;
@@ -425,7 +429,7 @@ footer{
             padding: 1em 10vw;
         }
             .contact-content > :first-child{
-                padding-top: 4rem;
+                padding-top: 1rem;
                 margin-top: 10vh;
             }
         footer a{
@@ -461,10 +465,9 @@ footer{
         }
         footer.footer-contact-open .contact-toggle-close{
             color: var(--jcb-offwhite);
-            transition: color 3s ease-in;
-            transition: padding 1.5s ease-in-out;
+            transition: color 3s ease-in, padding 1.5s ease-in-out;
             top: 1.5rem;
-            padding: 3.5rem 2vh 6vh 6vh;
+            padding: 3.5rem 2vh 90vh 6vh;
             opacity: 1;
         }
         footer.footer-contact-open ul{
