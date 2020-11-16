@@ -320,6 +320,9 @@ nav {
         padding: 0 3vw 2vh 3vw;
         text-align: left;
     }
+    .thumbnail-link{
+        position: relative;
+    }
     .work-item .custom-view-link{
         color: var(--jcb-offwhite);
         background-color: var(--jcb-charcoal-transparency);
@@ -327,10 +330,10 @@ nav {
         /* background-color: var(--jcb-offwhite-transparency); */
         line-height: 1em;
         height: 2.5em;
-        padding: 5vw;
+        padding: 1em 5vw;
         margin: 0;
         position: absolute;
-        bottom: .5em;
+        bottom: 2.5em;
         right: 3vw;
         display: block;
         font-family: 'Tajawal-Regular', sans-serif;
