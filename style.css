@@ -769,9 +769,21 @@ footer.footer-contact-open #footer-contact {
     }    
 }
 /* even larger screens */
-@media screen and (min-width: 1200px){  
+@media screen and (min-width: 1200px){ 
+    .main-nav ul li{
+        /* border: .1px solid red; */
+        padding-top: .5em;
+    } 
+    .main-nav ul li ul{
+        z-index: -1;
+        top: 3.5rem;
+    }
     .main-nav ul li ul li{
         font-size: 1.4em;
+    }
+    iframe{
+        max-width: 1000px;
+        margin: 0 auto;
     }
 }
 
