@@ -591,9 +591,6 @@ footer{
 /* ----------------------MEDIA-QUERIES---------------------- */
 /*midrange*/
 @media screen and (min-width: 540px){
-    /* body{
-        background-color: lightgreen;
-    } */
     header #branding, #footer-contact{
         font-size: 1rem;
     }
@@ -611,6 +608,7 @@ footer{
 @media screen and (min-width: 768px) and (hover: hover) {
     .main-content{
         padding: 30vh 5vw 20vh 5vw;
+        background-color: khaki;
     }
      iframe {
       width: 80vw;
@@ -682,24 +680,36 @@ footer{
     .current-menu-item{
         color: var(--jcb-charcoal);
     }
-    /* footer doesn't pop op all the way */
+    /* footer doesn't pop up all the way */
     #footer-contact{
         transition: all 1s ease-in-out;
     }
     footer.footer-contact-open #footer-contact {
-        height: 24vh;
+        overflow: hidden;
+        height: 18vw;
         opacity: 1;
+        padding: 0;
     }
         .contact-content p{
             font-size: 1.8vw;
             padding: .75em 8vw 1em 8vw;
+            color: var(--jcb-charcoal);
+            transition: all 1s ease-in-out;
         }
+        footer.footer-contact-open .contact-content p{
+            color: var(--jcb-offwhite);
+            transition: all 1s ease-in-out;
+        }
+        .contact-content > :first-child{
+                padding-top: .25em;
+                margin-top: 0;
+            } 
         #footer-contact ul{
             display: flex;
-            margin-top: 1em;
+            margin-top: 0;
             flex-direction: row;
-        justify-content:space-around ;
-        align-items: stretch;
+            justify-content:space-around ;
+            align-items: stretch;
             width: 100vw;
             padding: 0 15vw;
         }
@@ -713,32 +723,28 @@ footer{
             opacity: 1;
             transition: all 1s ease-in-out;
         }
-        footer.footer-contact-open .contact-toggle-open{
-            opacity: 0;
-        }
         .contact-toggle-close{
+            padding: 0;
+            font-size: 1.6em;
+            position: fixed;
+            right: 2vw;
+            top: 0;
+            text-align: right;
+            font-family: 'Tajawal', sans-serif;
+            font-style: normal;
+            font-weight: lighter;
+            color: var(--jcb-charcoal);
+            transition: color .5s ease-in;
+        }
+        footer.footer-contact-open .contact-toggle-close{
             padding: 1em 1em 1em 2em;
             position: absolute;
             top: 0;
             right: 0;
             font-size: 1em;
-            transition: all 1s ease-in-out;
+            transition: all 1s linear;
         }
-        footer.footer-contact-open .contact-toggle-close{
-            color: var(--jcb-offwhite);
-        }
-        footer.footer-contact-open ul{
-            display: block;
-        }
-    #footer-nav { 
-        position: relative;
-        text-transform: lowercase;
-        font-style: italic; 
-        font-size: 1.2em;
-        color: var(--jcb-grey);
-        padding-bottom: 1rem;
-        margin: 26vh 0 0 0;
-    }
+
     .work-item{
         min-height: 30vw;
         position: relative;
