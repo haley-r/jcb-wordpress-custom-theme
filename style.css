@@ -819,6 +819,15 @@ header #branding #site-title{
     header #branding #site-description{
         display: block;
     }
+footer.footer-contact-open #footer-contact {
+    height: 9em;
+}
+    .contact-content p{
+        font-size: 1rem;
+    }
+    #footer-contact li{
+        font-size: 1rem;
+    }    
 }
 /* even larger screens */
 @media screen and (min-width: 950px){  
