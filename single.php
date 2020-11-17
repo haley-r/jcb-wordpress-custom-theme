@@ -15,7 +15,12 @@
                     ?><p class="work-page-completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
                                                                                                                     } ?>
                     <div class="link-block">
-                        <?php if (get_field('link_to_view_work') != null) { ?>
+                        <?php
+                        $view_link = get_field('link_to_view_work');
+                        $postname = $post->post_name;
+                        
+                        if (get_field('link_to_view_work') != null && strpos($view_link, $postname) == false) { ?>
+                            <!-- maybe should only open in new tab if the url doesnt contain the site url (is external) -->
                             <a href="<?php the_field('link_to_view_work'); ?>" target="_blank" class="custom-view-link">
                                 <?php the_field('label_for_view_link') ?>
                             </a>
@@ -24,8 +29,8 @@
                         <?php
                         $worktypes = get_field('work_type');
                         if ($worktypes) :
-                            foreach ($worktypes as $worktype) : ?>
-                                <a href="<?php echo home_url(); ?>/<?php echo $worktype['value']; ?>">View All <?php echo $worktype['label']; ?></a>
+                            foreach ($worktypes as $worktype) :  ?>
+                                <a href="<?php echo home_url(); ?>/<?php echo $worktype['value']; ?>">View All '<?php echo $worktype['label']; ?>'</a>
                         <?php endforeach;
                         endif; ?>
                         <a href="<?php echo home_url(); ?>">Home</a>
