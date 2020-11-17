@@ -682,7 +682,7 @@ footer{
     }
     /* footer doesn't pop up all the way */
     #footer-contact{
-        transition: all 1s ease-in-out;
+        transition: height 1s ease-in-out, padding 1s ease-in-out;
     }
     footer.footer-contact-open #footer-contact {
         overflow: hidden;
