@@ -20,7 +20,6 @@
                         $postname = $post->post_name;
                         
                         if (get_field('link_to_view_work') != null && strpos($view_link, $postname) == false) { ?>
-                            <!-- maybe should only open in new tab if the url doesnt contain the site url (is external) -->
                             <a href="<?php the_field('link_to_view_work'); ?>" target="_blank" class="custom-view-link">
                                 <?php the_field('label_for_view_link') ?>
                             </a>

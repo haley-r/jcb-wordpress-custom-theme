@@ -49,11 +49,20 @@
                             <div class="work-item-content"><?php the_content(); ?></div>
                             <div class="thumbnail-link">
                                 <?php the_post_thumbnail(); ?>
-                                <?php if (get_field('link_to_view_work') != null) { ?>
+                                <?php if (get_field('link_to_view_work') != null) { 
+                                    //if the link is to somewhere else on the site (contains '/work'), open it in this tab
+                                    if (strpos(get_field('link_to_view_work'), '/work')){?>
+                                        <a href="<?php the_field('link_to_view_work'); ?>" class="custom-view-link">
+                                            <?php the_field('label_for_view_link') ?>
+                                        </a><?php
+                                    }
+                                    //if the link is external (anything else), open in new tab
+                                    else {?>
                                     <a href="<?php the_field('link_to_view_work'); ?>" target="_blank" class="custom-view-link">
                                         <?php the_field('label_for_view_link') ?>
-                                    </a>
-                                <?php } ?>
+                                    </a><?php
+                                    }
+                                } ?>
                             </div>
                         </div>
                     <?php
