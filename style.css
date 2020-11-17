@@ -609,7 +609,6 @@ footer{
 @media screen and (min-width: 768px) and (hover: hover) {
     .main-content{
         padding: 30vh 5vw 20vh 5vw;
-        background-color: khaki;
     }
      iframe {
       width: 80vw;
@@ -662,10 +661,10 @@ footer{
                 position: fixed;
                 left: 0;
                 width: 90vw;
-                height: 100vh;
+                height: 90vh;
                 overflow: auto;
                 margin: none;
-                padding: 6vh 0 8vh 0;
+                padding: 6vh 0 3.5em 0;
                 z-index: 9;
                 transform: translateY(-.3em);
                 background: var(--jcb-offwhite-transparency);
