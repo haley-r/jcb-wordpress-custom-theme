@@ -44,7 +44,7 @@
                             <h5 class="work-item-header" id="<?php echo $post->post_name ?>"><?php the_title(); ?></h5>
                             <h6 class="work-item-subtitle"><?php the_field('subtitle') ?></h6>
                             <?php if (get_post_type() == 'work' && get_field('completion_date') != null) {
-                            ?><p class="completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
+                            ?><p class="completed-date"><?php echo $completionDate->format('F Y'); ?></p><?php
                                                                                                                 } ?>
                             <div class="work-item-content"><?php the_content(); ?></div>
                             <div class="thumbnail-link">

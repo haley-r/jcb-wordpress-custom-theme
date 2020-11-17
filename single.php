@@ -12,7 +12,7 @@
                     <?php the_content(); ?>
                     <?php if (get_post_type() == 'work' && get_field('completion_date') != null) {
                         $completionDate = new DateTime(get_field('completion_date'));
-                    ?><p class="work-page-completed-date">completed <?php echo $completionDate->format('F Y'); ?></p><?php
+                    ?><p class="work-page-completed-date"><?php echo $completionDate->format('F Y'); ?></p><?php
                                                                                                                     } ?>
                     <div class="link-block">
                         <?php
