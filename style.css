@@ -150,10 +150,14 @@ header #branding{
     font-size: 4vw;
     padding: .75em 0;
     letter-spacing: .3em;
+    cursor: pointer;
 }
+    header #branding:hover{
+        font-weight: 900;
+    }
     header #branding #site-description{
         position: absolute;
-        z-index: 2;
+        z-index: -2;
         top: .75em;
         right: 1em;
         display: none;
@@ -817,7 +821,7 @@ header #branding #site-title{
     }
     header #branding #site-title a:hover{
         font-size: 1em;
-        font-weight: bold;
+        /* font-weight: bold; */
         transform: translateX(0);
     }
     header #branding #site-description{
