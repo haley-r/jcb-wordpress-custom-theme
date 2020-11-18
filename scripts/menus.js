@@ -27,4 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("footer").classList.toggle("footer-contact-open");
         document.querySelector("body").classList.toggle("footer-contact-open");
     }
+
+    //make the splash page disappear upon loading
+    let splashScreen = document.querySelector("#splash-div");
+    let body = document.querySelector("body")
+    window.addEventListener("load", () => fadeAwaySplash());
+    function fadeAwaySplash() {
+        body.classList.toggle("splash-screen-closed")
+        function removeSplashFromDOM(){
+            splashScreen.remove();
+        }
+        setTimeout( removeSplashFromDOM, 5000)
+    }
 });
