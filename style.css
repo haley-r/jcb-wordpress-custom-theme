@@ -137,7 +137,7 @@ iframe {
     margin: 0;
 }
 /* splash styles */
-#splash-div{
+.splash-div{
     opacity: 1;
     position: fixed;
     top: 0;
@@ -147,16 +147,14 @@ iframe {
     height: 100vh;
     background-color: var(--jcb-charcoal);
     transition: opacity 3s ease-in-out;
-    transition-delay: .5s;
+    transition-delay: 1s;
     cursor: default;
+    color: var(--jcb-offwhite);
 }
-.splash-screen-closed #splash-div{
+.splash-screen-closed .splash-div{
     opacity: 0;
     /* background-color: var(--jcb-offwhite); */
     /* height: 0; */
-}
-.visited #splash-div{
-    display: none;
 }
     .splash-title{
         color: var(--jcb-offwhite);
@@ -171,7 +169,7 @@ iframe {
         font-weight: 400;
         letter-spacing: .3em;
         cursor: default;
-        transition: color .5s ease-in-out;
+        transition: color 1s ease-in-out;
         transition-delay: .5s;
     }
     .splash-screen-closed .splash-title{
