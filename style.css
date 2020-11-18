@@ -143,11 +143,11 @@ iframe {
     top: 0;
     left: 0;
     z-index: 100;
-    width: 100vw;
+    min-width: 100vw;
     height: 100vh;
     background-color: var(--jcb-charcoal);
-    transition: opacity 3s ease-in-out;
-    transition-delay: 1s;
+    transition: opacity 2s ease-in;
+    transition-delay: 3s;
     cursor: default;
     color: var(--jcb-offwhite);
 }
@@ -158,22 +158,28 @@ iframe {
 }
     .splash-title{
         color: var(--jcb-offwhite);
-        position: absolute;
+        display: block;
+        position: fixed;
+        text-align: center;
         top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        width: 100vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
         text-transform: uppercase;
         font-family: 'EB_Garamond', serif;
         font-size: 10vw;
         font-weight: 400;
         letter-spacing: .3em;
         cursor: default;
-        transition: color 1s ease-in-out;
-        transition-delay: .5s;
+        line-height: 1.4em;
+        transition: color 1.5s ease-in-out, line-height 2s ease-in, font-size 2s ease-in, letter-spacing 2s ease-in;
+        transition-delay: 1s;
     }
     .splash-screen-closed .splash-title{
         color: var(--jcb-charcoal);
+        line-height: 5em;
+        font-size: 30vw;
+        letter-spacing: 1em;
     }
 
 /* header styles (includes nav) */
@@ -277,17 +283,6 @@ nav {
                         line-height: 1em;
                         color: var(--jcb-charcoal);
                     }
-        /* #content article {
-            visibility: visible;
-            opacity: 1;
-            transition: visibility 0s, opacity 0.75s linear;
-            height: auto;
-        }
-        .smallscreen-menu-open #content article {
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s, opacity 0.75s linear;
-        } */
         .smallscreen-menu-open #content {
             display: none;
         }
@@ -826,149 +821,3 @@ footer.footer-contact-open #footer-contact {
         margin: 0 auto;
     }
 }
-
-
-
-
-
-
-
-
-/*splash page styles*/
-/* .hide {
-    display: none;
-    }
-.splash {
-    background: #efefef;
-    z-index: 3;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    color: #aaa;
-    cursor: pointer;
-}
-    .splash a {
-        display: block;
-        height: 100vh;
-        width: 100vw;
-    }
-    .splash a:hover {
-        font-weight: normal;
-    }
-    .splash-content {
-        width: 100%;
-        height: 60vw;
-        max-height: 480px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);        
-    }
-    #gif-reel {
-        background: #efefef url("../../images/jcb-reel.gif") no-repeat;
-        background-size: cover;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        height: 60vw;
-        max-width: 720px;
-        max-height: 480px;
-    }
-    .splash h1 {
-        font: normal 11.25vw 'Cinzel', serif;
-        line-height: 1.5em;
-        text-transform: uppercase;
-        color: #efefef;
-        display: block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-65%);
-    }
-    .splash p, .splash ul {
-        font-style: italic;
-        letter-spacing: .3em;
-        text-transform: lowercase;
-        position: fixed;
-        margin: .5em;
-    }
-    .splash p {
-        width: 30%;
-        text-align: left;
-        top: -100px;
-        left: 0;
-    }
-    .splash ul {
-        text-align: right;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        bottom: -100px;
-        right: 0;
-        transform: translateY(-1em);
-    }
-    .splash li {
-        display: block;
-        padding: 0 .5em;
-    }  */
-
-/* media queries for splash? */
-
-  /* splash */
-    /* .splash-content {
-        height: 50vw;        
-    }
-    #gif-reel {
-        width: 72%;
-        height: 50vw;
-    }
-    .splash h1 {
-        font: normal 9vw 'Cinzel', serif;
-    }
-    .splash p, .splash ul {
-        width: 100%;
-    }
-    .splash p {
-        text-align: center;
-        top: -50px;
-        left: 50%;
-        transform: translatex(-50%);
-    }
-    .splash ul {
-        text-align: center;
-        bottom: -50px;
-        transform: translateY(-1em);
-    }
-    .splash li {
-        display: inline-block;
-        padding: 0 5%;
-    }*/
-      /* } */ 
-
-/* desktop */
-/* @media screen and (min-width: 768px){  */ */
-  /* main content */
-    /* iframe {
-            width: 96vw;
-        }  */
-  /* nav - uls */
-    /* .main-nav ul li ul li{
-      font-size: 3vw;
-  }  */
-  /* splash */
-      /* .splash-content {
-          height: 40vw;       
-      } */
-
-      /* #gif-reel {
-          width: 60%;
-          height: 40vw;
-      }
-      .splash h1 {
-          font: normal 7.5vw 'Cinzel', serif;
-      }
-    } */
- /* } */
-
-
