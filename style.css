@@ -146,14 +146,17 @@ iframe {
     width: 100vw;
     height: 100vh;
     background-color: var(--jcb-charcoal);
-    transition: opacity 2s ease-in-out;
-    transition-delay: 2s;
+    transition: opacity 3s ease-in-out;
+    transition-delay: .5s;
     cursor: default;
 }
 .splash-screen-closed #splash-div{
     opacity: 0;
     /* background-color: var(--jcb-offwhite); */
     /* height: 0; */
+}
+.visited #splash-div{
+    display: none;
 }
     .splash-title{
         color: var(--jcb-offwhite);
@@ -169,7 +172,7 @@ iframe {
         letter-spacing: .3em;
         cursor: default;
         transition: color .5s ease-in-out;
-        transition-delay: 2s;
+        transition-delay: .5s;
     }
     .splash-screen-closed .splash-title{
         color: var(--jcb-charcoal);
