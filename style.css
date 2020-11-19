@@ -159,7 +159,7 @@ iframe {
     .splash-title{
         color: var(--jcb-offwhite);
         display: block;
-        position: fixed;
+        position: absolute;
         text-align: center;
         top: 50%;
         left: 50%;
@@ -180,6 +180,20 @@ iframe {
         line-height: 5em;
         font-size: 30vw;
         letter-spacing: 1em;
+    }
+    .splash-subtitle{
+        display: block;
+        font-family: 'Tajawal-Light';
+        font-size: 2vw;
+        letter-spacing: .3em;
+        color: var(--jcb-offwhite);
+        transition: color 1.5s ease-in-out, font-size 2s ease-in, letter-spacing 2s ease-in;
+        transition-delay: 1s;
+    }
+    .splash-screen-closed .splash-subtitle{
+        font-size: 6vw;
+        letter-spacing: 1em;
+        color: var(--jcb-charcoal);
     }
 
 /* header styles (includes nav) */
