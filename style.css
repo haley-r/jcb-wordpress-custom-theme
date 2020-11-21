@@ -567,6 +567,26 @@ footer{
         color: var(--jcb-charcoal);
         font-weight: bold;
     }
+/* work index page */
+.index-title{
+    font-size: 1.5em;
+    font-family: 'Tajawal-Light';
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-bottom: 1em;
+}
+.work-index-content{
+    min-height: 100vh;
+    padding-top: 8em;
+}
+.work-index-content article h2{
+    margin: 1em;
+}
+.work-index-content span.work-type{
+    color: var(--jcb-grey);
+    text-transform: lowercase;
+    letter-spacing: normal;
+}
 
 /* ----------------------MEDIA-QUERIES---------------------- */
 /*midrange*/
