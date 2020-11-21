@@ -146,8 +146,8 @@ iframe {
     min-width: 100vw;
     height: 100vh;
     background-color: var(--jcb-charcoal);
-    transition: opacity 2s ease-in;
-    transition-delay: 3s;
+    transition: opacity 1.5s ease-in;
+    transition-delay: 1s;
     cursor: default;
     color: var(--jcb-offwhite);
 }
@@ -173,15 +173,18 @@ iframe {
         letter-spacing: .3em;
         cursor: default;
         line-height: 1.4em;
-        transition: opacity 1.5s ease-in-out, line-height 2s ease-in, font-size 2s ease-in, letter-spacing 2s ease-in;
-        transition-delay: 1s;
+        scale: 1;
+        /* transition: opacity 1.5s ease-in-out, line-height 2s ease-in, font-size 2s ease-in, letter-spacing 2s ease-in; */
+        transition-delay: .5s;
+        transition: opacity 1.5s ease-in-out;
     }
     .splash-screen-closed .splash-title{
         /* color: var(--jcb-charcoal); */
         opacity: 0;
-        line-height: 5em;
-        font-size: 30vw;
-        letter-spacing: 1em;
+        scale: 5;
+        /* line-height: 5em; */
+        /* font-size: 30vw; */
+        /* letter-spacing: 1em; */
     }
     .splash-subtitle{
         display: block;
@@ -190,13 +193,14 @@ iframe {
         letter-spacing: .3em;
         color: var(--jcb-offwhite);
         opacity: 1;
-        transition: opacity 1.5s ease-in-out, font-size 2s ease-in, letter-spacing 2s ease-in;
-        transition-delay: 1s;
+        /* transition: opacity 1.5s ease-in-out, font-size 2s ease-in, letter-spacing 2s ease-in; */
+        transition-delay: .5s;
+        transition: opacity 2s;
     }
     .splash-screen-closed .splash-subtitle{
         opacity: 0;
-        font-size: 6vw;
-        letter-spacing: 1em;
+        /* font-size: 6vw; */
+        /* letter-spacing: 1em; */
         /* color: var(--jcb-charcoal); */
     }
 

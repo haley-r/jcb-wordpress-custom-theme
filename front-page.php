@@ -21,7 +21,7 @@
         splashDiv.appendChild(splashHeader);
         splashDiv.classList.add('splash-div');
         // if you've recently visited the site, don't even display the splash, just log the time
-        if (localStorage.getItem('last-visited') && timeElapsedInSeconds < 10) {
+        if (localStorage.getItem('last-visited') && timeElapsedInSeconds < 3600) {
             localStorage.setItem("last-visited", Date.now());
         }
         //  but if youve never visited, or if its been a while, insert splash into DOM
