@@ -7,15 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
         let body = document.querySelector("body");
 
         window.addEventListener("load", () => fadeAwaySplash());
+        //in case the above doesn't trigger it, a click/touch or scroll will as well
+        splashScreen.addEventListener("click", () => fadeAwaySplash());
+        window.addEventListener("scroll", () => fadeAwaySplash());
 
         function fadeAwaySplash() {
-            function removeSplashFromDOM() {
+            // function removeSplashFromDOM() {
+            //     splashScreen.remove();
+            // }
+            body.classList.add("splash-screen-closed");
+            // setTimeout(removeSplashFromDOM, 5000)
+            setTimeout(() => {
                 splashScreen.remove();
-            }
-            if (splashScreen) {
-                body.classList.add("splash-screen-closed");
-                setTimeout(removeSplashFromDOM, 5000)
-            }
+            }, 5000);
         }        
     }
     
