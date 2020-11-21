@@ -1,4 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
+    //if the page has been visited before, don't even show the splash
+    //if it hasn't been, show then fade away the splash
+
+    if (document.querySelector(".splash-div")){
+        let splashScreen = document.querySelector(".splash-div");
+        let body = document.querySelector("body");
+
+        window.addEventListener("load", () => fadeAwaySplash());
+
+        function fadeAwaySplash() {
+            function removeSplashFromDOM() {
+                splashScreen.remove();
+            }
+            if (splashScreen) {
+                body.classList.add("splash-screen-closed");
+                setTimeout(removeSplashFromDOM, 5000)
+            }
+        }        
+    }
+    
+
     let openButton = document.querySelector(".menu-toggle");
     //use the button to designate menu open or not
     openButton.addEventListener("click", () => toggleMenu());
@@ -26,22 +47,5 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleContact() {
         document.querySelector("footer").classList.toggle("footer-contact-open");
         document.querySelector("body").classList.toggle("footer-contact-open");
-    }
-
-    //if the page has been visited before, don't even show the splash
-    //if it hasn't been, show then fade away the splash
-    let splashScreen = document.querySelector(".splash-div");
-    let body = document.querySelector("body");
-
-    window.addEventListener("load", () => fadeAwaySplash());
-
-    function fadeAwaySplash() {
-        function removeSplashFromDOM() {
-            splashScreen.remove();
-        }
-        if (splashScreen){
-            body.classList.add("splash-screen-closed");
-            setTimeout(removeSplashFromDOM, 5000)
-        }
     }
 });
