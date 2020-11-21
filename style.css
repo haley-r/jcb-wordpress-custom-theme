@@ -552,6 +552,21 @@ footer{
         padding-bottom: 1rem;
         margin: 26vh 0 0 0;
     }
+/* 404 Page not Found Styles */
+.not-found{
+    color: var(--jcb-grey);
+    height: 100vh;
+    padding: 30vh 0;
+}
+    .not-found p{
+        font-size: 3em;
+        text-transform: capitalize;
+    }
+    .not-found a{
+        font-size: 2em;
+        color: var(--jcb-charcoal);
+        font-weight: bold;
+    }
 
 /* ----------------------MEDIA-QUERIES---------------------- */
 /*midrange*/
