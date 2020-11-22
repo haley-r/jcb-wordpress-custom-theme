@@ -13,19 +13,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /*-----CUSTOM-STYLES-----*/
 /* fonts */
-/* @font-face {
-    font-family: Abel;  
-    src: url(../fonts/Abel/Abel-Regular.ttf);  
-    font-weight: normal;  
-} */
-/* @font-face {
-    font-family: Cinzel;  
-    src: url(../fonts/Cinzel/Cinzel-VariableFont_wght.ttf);  
-    font-weight: normal;  
-} */
 @font-face{
     font-family: EB_Garamond;
-    src: url(../fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+    src: url(./fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
     font-style: normal;
 }
 /* @font-face{
@@ -35,31 +25,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 } */
 @font-face{
     font-family: Tajawal-ExtraLight;
-    src: url(../fonts/Tajawal/Tajawal-ExtraLight.ttf);
+    src: url(./fonts/Tajawal/Tajawal-ExtraLight.ttf);
 }
 @font-face{
     font-family: Tajawal-Light;
-    src: url(../fonts/Tajawal/Tajawal-Light.ttf);
+    src: url(./fonts/Tajawal/Tajawal-Light.ttf);
 }
 @font-face{
     font-family: Tajawal-Medium;
-    src: url(../fonts/Tajawal/Tajawal-Medium.ttf);
+    src: url(./fonts/Tajawal/Tajawal-Medium.ttf);
 }
 @font-face{
     font-family: Tajawal-Regular;
-    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
-}
-@font-face{
-    font-family: Tajawal-Bold;
-    src: url(../fonts/Tajawal/Tajawal-Bold.ttf);
-}
-@font-face{
-    font-family: Tajawal-ExtraBold;
-    src: url(../fonts/Tajawal/Tajawal-ExtraBold.ttf);
-}
-@font-face{
-    font-family: Tajawal-Black;
-    src: url(../fonts/Tajawal/Tajawal-Black.ttf);
+    src: url(./fonts/Tajawal/Tajawal-Regular.ttf);
 }
 /* colors */
 :root {
