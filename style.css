@@ -3,7 +3,7 @@ Theme Name: JCB Custom
 Author: Haley Ryan
 Author URI: http://haleyr.info
 Description: Custom theme built based on the BlankSlate HTML5 boilerplate starter theme for WordPress by tidythemes.com.
-Version: 1.0
+Version: 1.3
 */
 
 /* styles from starter blankslate theme: */
@@ -90,6 +90,9 @@ a {
 a:hover {
         font-weight: bold;
         /* transform: translateX(-.1em); */
+}
+h1 a:hover, #site-description, #branding a:hover, #branding:hover, #site-title {
+    font-weight: normal;
 }
 img{
     max-width: 100vw;
@@ -660,6 +663,10 @@ footer{
     .current-menu-item{
         color: var(--jcb-charcoal);
         font-family: 'Tajawal-Regular';
+    }
+    .work-index-content{
+        padding-top: 12em;
+        padding-bottom: 2em;
     }
     /* footer doesn't pop up all the way */
     #footer-contact{

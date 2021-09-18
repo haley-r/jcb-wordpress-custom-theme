@@ -2,6 +2,7 @@
 <footer id="footer">
     <div id="copyright">
         &copy; <?php echo esc_html(date_i18n(__('Y', 'blankslate'))); ?> <?php echo esc_html(get_bloginfo('name')); ?>
+        <p>website design by <a target="_blank" href="https://haleyr.info/">Haley Ryan</a></p>
     </div>
     <div id="footer-contact">
         <?php
