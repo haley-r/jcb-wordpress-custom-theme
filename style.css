@@ -520,6 +520,10 @@ footer{
             top: 1.5rem;
             padding: 3.5rem 2vh 90vh 6vh;
             opacity: 1;
+            display: block;
+        }
+        footer .contact-toggle-close{
+            display: none;
         }
         footer.footer-contact-open ul{
             display: block;
